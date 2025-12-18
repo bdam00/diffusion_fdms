@@ -7,7 +7,7 @@ from time import sleep
 # PARAMÈTRES MODIFIABLES PAR L'ÉTUDIANT
 # ------------------------------------------------------
 
-GITHUB_TOKEN = "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"   # ← Mets ton token ici
+GITHUB_TOKEN = "# PUT YOUR GITHUB API TOKEN"   # ← Mets ton token ici
 
 MAX_COMMITS = 100               # nombre maximum de commits
 MAX_ISSUES = 100                # nombre maximum d'issues
