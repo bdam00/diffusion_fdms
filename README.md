@@ -32,7 +32,7 @@ pip3 install -r requirements.txt
 The main entry point for the application is `code/main.py`. To run it, use the following command:
 
 ```bash
-python code/main.py
+python3 code/main.py
 ```
 
 The script will guide you through an interactive menu to:
