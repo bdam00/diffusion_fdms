@@ -1,0 +1,602 @@
+[
+  {
+    "sha": "8f0b4cce4481fb22653697cced8d0d04027cb1e8",
+    "author": "torvalds",
+    "date": "2025-12-14T04:05:07+00:00",
+    "message": "Linux 6.19-rc1"
+  },
+  {
+    "sha": "6a1636e06625ec0dd7f2b908ab39a8beea24bfd3",
+    "author": "torvalds",
+    "date": "2025-12-14T03:35:35+00:00",
+    "message": "Merge tag 'scsi-misc' of git://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi\n\nPull SCSI fixes from James Bottomley:\n \"The only core fix is in doc; all the others are in drivers, with the\n  biggest impacts in libsas being the rollback on error handling and in\n  ufs coming from a couple of error handling fixes, one causing a crash\n  if it's activated before scanning and the other fixing W-LUN\n  resumption\"\n\n* tag 'scsi-misc' of git://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi:\n  scsi: ufs: qcom: Fix confusing cleanup.h syntax\n  scsi: libsas: Add rollback handling when an error occurs\n  scsi: device_handler: Return error pointer in scsi_dh_attached_handler_name()\n  scsi: ufs: core: Fix a deadlock in the frequency scaling code\n  scsi: ufs: core: Fix an error handler crash\n  scsi: Revert \"scsi: libsas: Fix exp-attached device scan after probe failure scanned in again after probe failed\"\n  scsi: ufs: core: Fix RPMB link error by reversing Kconfig dependencies\n  scsi: qla4xxx: Use time conversion macros\n  scsi: qla2xxx: Enable/disable IRQD_NO_BALANCING during reset\n  scsi: ipr: Enable/disable IRQD_NO_BALANCING during reset\n  scsi: imm: Fix use-after-free bug caused by unfinished delayed work\n  scsi: target: sbp: Remove KMSG_COMPONENT macro\n  scsi: core: Correct documentation for scsi_device_quiesce()\n  scsi: mpi3mr: Prevent duplicate SAS/SATA device entries in channel 1\n  scsi: target: Reset t_task_cdb pointer in error case\n  scsi: ufs: core: Fix EH failure after W-LUN resume error"
+  },
+  {
+    "sha": "0dfb36b2dcb666f116ba314e631bd3bc632c44d1",
+    "author": "torvalds",
+    "date": "2025-12-14T03:24:10+00:00",
+    "message": "Merge tag 'ceph-for-6.19-rc1' of https://github.com/ceph/ceph-client\n\nPull ceph updates from Ilya Dryomov:\n \"We have a patch that adds an initial set of tracepoints to the MDS\n  client from Max, a fix that hardens osdmap parsing code from myself\n  (marked for stable) and a few assorted fixups\"\n\n* tag 'ceph-for-6.19-rc1' of https://github.com/ceph/ceph-client:\n  rbd: stop selecting CRC32, CRYPTO, and CRYPTO_AES\n  ceph: stop selecting CRC32, CRYPTO, and CRYPTO_AES\n  libceph: make decode_pool() more resilient against corrupted osdmaps\n  libceph: Amend checking to fix `make W=1` build breakage\n  ceph: Amend checking to fix `make W=1` build breakage\n  ceph: add trace points to the MDS client\n  libceph: fix log output race condition in OSD client"
+  },
+  {
+    "sha": "4cfc21494ac6dd8518b0ebbc73cf625523ddd870",
+    "author": "torvalds",
+    "date": "2025-12-14T03:21:02+00:00",
+    "message": "Merge tag 'tomoyo-pr-20251212' of git://git.code.sf.net/p/tomoyo/tomoyo\n\nPull tomoyo update from Tetsuo Handa:\n \"Trivial optimization\"\n\n* tag 'tomoyo-pr-20251212' of git://git.code.sf.net/p/tomoyo/tomoyo:\n  tomoyo: Use local kmap in tomoyo_dump_page()"
+  },
+  {
+    "sha": "4a298a43f5e339f48d2dda0665c02b88ee9a4e03",
+    "author": "torvalds",
+    "date": "2025-12-13T18:12:46+00:00",
+    "message": "Merge tag 'smp-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip\n\nPull CPU hotplug fix from Ingo Molnar:\n\n - Fix CPU hotplug callbacks to disable interrupts on UP kernels\n\n* tag 'smp-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:\n  cpu: Make atomic hotplug callbacks run with interrupts disabled on UP"
+  },
+  {
+    "sha": "cba09e3ed06db4b6c87bc97e0aea080421fb8f7d",
+    "author": "torvalds",
+    "date": "2025-12-13T18:10:35+00:00",
+    "message": "Merge tag 'perf-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip\n\nPull perf event fixes from Ingo Molnar:\n\n - Fix NULL pointer dereference crash in the Intel PMU driver\n\n - Fix missing read event generation on task exit\n\n - Fix AMD uncore driver init error handling\n\n - Fix whitespace noise\n\n* tag 'perf-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:\n  perf/x86/intel: Fix NULL event dereference crash in handle_pmi_common()\n  perf/core: Fix missing read event generation on task exit\n  perf/x86/amd/uncore: Fix the return value of amd_uncore_df_event_init() on error\n  perf/uprobes: Remove <space><Tab> whitespace noise"
+  },
+  {
+    "sha": "db0130185ee32896524963289840c97dd73aaaa3",
+    "author": "torvalds",
+    "date": "2025-12-13T18:07:09+00:00",
+    "message": "Merge tag 'irq-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip\n\nPull irq fixes from Ingo Molnar:\n\n - Fix error code in the irqchip/mchp-eic driver\n\n - Fix setup_percpu_irq() affinity assumptions\n\n - Remove the unused irq_domain_add_tree() function\n\n* tag 'irq-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:\n  irqchip/mchp-eic: Fix error code in mchp_eic_domain_alloc()\n  irqdomain: Delete irq_domain_add_tree()\n  genirq: Allow NULL affinity for setup_percpu_irq()"
+  },
+  {
+    "sha": "edbe407235ecfc827b6a211628988261f957df9e",
+    "author": "torvalds",
+    "date": "2025-12-13T18:04:16+00:00",
+    "message": "Merge tag 'core-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip\n\nPull misc core fixes from Ingo Molnar:\n\n - Improve bug reporting\n\n - Suppress W=1 format warning\n\n - Improve rseq scalability on Clang builds\n\n* tag 'core-urgent-2025-12-12' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:\n  rseq: Always inline rseq_debug_syscall_return()\n  bug: Hush suggest-attribute=format for __warn_printf()\n  bug: Let report_bug_entry() provide the correct bugaddr"
+  },
+  {
+    "sha": "9d9c1cfec01cdbf24bd9322ed555713a20422115",
+    "author": "torvalds",
+    "date": "2025-12-13T08:55:12+00:00",
+    "message": "Merge tag 'mm-nonmm-stable-2025-12-11-11-47' of git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm\n\nPull misc updates from Andrew Morton:\n \"There are no significant series in this small merge. Please see the\n  individual changelogs for details\"\n\n[ Editor's note: it's mainly ocfs2 and a couple of random fixes ]\n\n* tag 'mm-nonmm-stable-2025-12-11-11-47' of git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm:\n  mm: memfd_luo: add CONFIG_SHMEM dependency\n  mm: shmem: avoid build warning for CONFIG_SHMEM=n\n  ocfs2: fix memory leak in ocfs2_merge_rec_left()\n  ocfs2: invalidate inode if i_mode is zero after block read\n  ocfs2: avoid -Wflex-array-member-not-at-end warning\n  ocfs2: convert remaining read-only checks to ocfs2_emergency_state\n  ocfs2: add ocfs2_emergency_state helper and apply to setattr\n  checkpatch: add uninitialized pointer with __free attribute check\n  args: fix documentation to reflect the correct numbers\n  ocfs2: fix kernel BUG in ocfs2_find_victim_chain\n  liveupdate: luo_core: fix redundant bound check in luo_ioctl()\n  ocfs2: validate inline xattr size and entry count in ocfs2_xattr_ibody_list\n  fs/fat: remove unnecessary wrapper fat_max_cache()\n  ocfs2: replace deprecated strcpy with strscpy\n  ocfs2: check tl_used after reading it from trancate log inode\n  liveupdate: luo_file: don't use invalid list iterator"
+  },
+  {
+    "sha": "2516a87153183e1797021879121ca25c95f1ea3a",
+    "author": "torvalds",
+    "date": "2025-12-13T08:35:41+00:00",
+    "message": "Merge tag 'mm-stable-2025-12-11-11-39' of git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm\n\nPull more MM updates from Andrew Morton:\n\n - \"powerpc/pseries/cmm: two smaller fixes\" (David Hildenbrand)\n   fixes a couple of minor things in ppc land\n\n - \"Improve folio split related functions\" (Zi Yan)\n   some cleanups and minorish fixes in the folio splitting code\n\n* tag 'mm-stable-2025-12-11-11-39' of git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm:\n  mm/damon/tests/core-kunit: avoid damos_test_commit stack warning\n  mm: vmscan: correct nr_requested tracing in scan_folios\n  MAINTAINERS: add idr core-api doc file to XARRAY\n  mm/hugetlb: fix incorrect error return from hugetlb_reserve_pages()\n  mm: fix CONFIG_STACK_GROWSUP typo in mm.h\n  mm/huge_memory: fix folio split stats counting\n  mm/huge_memory: make min_order_for_split() always return an order\n  mm/huge_memory: replace can_split_folio() with direct refcount calculation\n  mm/huge_memory: change folio_split_supported() to folio_check_splittable()\n  mm/sparse: fix sparse_vmemmap_init_nid_early definition without CONFIG_SPARSEMEM\n  powerpc/pseries/cmm: adjust BALLOON_MIGRATE when migrating pages\n  powerpc/pseries/cmm: call balloon_devinfo_init() also without CONFIG_BALLOON_COMPACTION"
+  },
+  {
+    "sha": "d2ea4d254d04a89e17504af0230c7268e3cac6bf",
+    "author": "brauner",
+    "date": "2025-12-13T07:45:23+00:00",
+    "message": "file: ensure cleanup\n\nBrown paper bag time. This is a silly oversight where I missed to drop\nthe error condition checking to ensure we clean up on early error\nreturns. I have an internal unit testset coming up for this which will\ncatch all such issues going forward.\n\nReported-by: Chris Mason <clm@fb.com>\nReported-by: Jeff Layton <jlayton@kernel.org>\nFixes: 011703a9acd7 (\"file: add FD_{ADD,PREPARE}()\")\nSigned-off-by: Christian Brauner <brauner@kernel.org>\nReviewed-by: Jeff Layton <jlayton@kernel.org>\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>"
+  },
+  {
+    "sha": "d552fc632cf5b7e3b2808fd341708bd353072c45",
+    "author": "torvalds",
+    "date": "2025-12-13T07:57:41+00:00",
+    "message": "x86/hv: Add gitignore entry for generated header file\n\nCommit 7bfe3b8ea6e3 (\"Drivers: hv: Introduce mshv_vtl driver\") added a\nnew generated header file for the offsets into the mshv_vtl_cpu_context\nstructure to be used by the low-level assembly code.  But it didn't add\nthe .gitignore file to go with it, so 'git status' and friends will\nmention it.\n\nLet's add the gitignore file before somebody thinks that generated\nheader should be committed.\n\nFixes: 7bfe3b8ea6e3 (\"Drivers: hv: Introduce mshv_vtl driver\")\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>"
+  },
+  {
+    "sha": "a859eca0e4cc96f63ff125dbe5388d961558b0e9",
+    "author": "torvalds",
+    "date": "2025-12-13T05:39:28+00:00",
+    "message": "Merge tag 'drm-fixes-2025-12-13' of https://gitlab.freedesktop.org/drm/kernel\n\nPull more drm fixes from Dave Airlie:\n \"These are the enqueued fixes that ended up in our fixes branch,\n  nouveau mostly, along with some small fixes in other places.\n\n  plane:\n   - Handle IS_ERR vs NULL in drm_plane_create_hotspot_properties()\n\n  ttm:\n   - fix devcoredump for evicted bos\n\n  panel:\n   - Fix stack usage warning in novatek-nt35560\n\n  nouveau:\n   - alloc fwsec sb at boot to avoid s/r problems\n   - fix strcpy usage\n   - fix i2c encoder crash\n\n  bridge:\n   - Ignore spurious PLL_UNLOCK bit in ti-sn65dsi83\n\n  mgag200:\n   - Fix bigendian handling in mgag200\n\n  tilcdc:\n   - Fix probe failure in tilcdc\"\n\n* tag 'drm-fixes-2025-12-13' of https://gitlab.freedesktop.org/drm/kernel:\n  drm/mgag200: Fix big-endian support\n  drm/tilcdc: Fix removal actions in case of failed probe\n  drm/ttm: Avoid NULL pointer deref for evicted BOs\n  drm: nouveau: Replace sprintf() with sysfs_emit()\n  drm/nouveau: fix circular dep oops from vendored i2c encoder\n  drm/nouveau: refactor deprecated strcpy\n  drm/plane: Fix IS_ERR() vs NULL check in drm_plane_create_hotspot_properties()\n  drm/bridge: ti-sn65dsi83: ignore PLL_UNLOCK errors\n  drm/nouveau/gsp: Allocate fwsec-sb at boot\n  drm/panel: novatek-nt35560: avoid on-stack device structure"
+  },
+  {
+    "sha": "237f1bbfe3d84a74ad8e6e207660bdb3e6d9a84d",
+    "author": "torvalds",
+    "date": "2025-12-13T05:25:26+00:00",
+    "message": "Merge tag 'drm-next-2025-12-13' of https://gitlab.freedesktop.org/drm/kernel\n\nPull drm fixes from Dave Airlie:\n \"This is the weekly fixes for what is in next tree, mostly amdgpu and\n  some i915, panthor and a core revert.\n\n  core:\n   - revert dumb bo 8 byte alignment\n\n  amdgpu:\n   - SI fix\n   - DC reduce stack usage\n   - HDMI fixes\n   - VCN 4.0.5 fix\n   - DP MST fix\n   - DC memory allocation fix\n\n  amdkfd:\n   - SVM fix\n   - Trap handler fix\n   - VGPR fixes for GC 11.5\n\n  i915:\n   - Fix format string truncation warning\n   - FIx runtime PM reference during fbdev BO creation\n\n  panthor:\n   - fix UAF\n\n  renesas:\n   - fix sync flag handling\"\n\n* tag 'drm-next-2025-12-13' of https://gitlab.freedesktop.org/drm/kernel:\n  Revert \"drm/amd/display: Fix pbn to kbps Conversion\"\n  drm/amd: Fix unbind/rebind for VCN 4.0.5\n  drm/i915: Fix format string truncation warning\n  drm/i915/fbdev: Hold runtime PM ref during fbdev BO creation\n  drm/amd/display: Improve HDMI info retrieval\n  drm/amdkfd: bump minimum vgpr size for gfx1151\n  drm/amd/display: shrink struct members\n  drm/amdkfd: Export the cwsr_size and ctl_stack_size to userspace\n  drm/amd/display: Refactor dml_core_mode_support to reduce stack frame\n  drm/amdgpu: don't attach the tlb fence for SI\n  drm/amd/display: Use GFP_ATOMIC in dc_create_plane_state()\n  drm/amdkfd: Trap handler support for expert scheduling mode\n  drm/amdkfd: Use huge page size to check split svm range alignment\n  drm/rcar-du: dsi: Handle both DRM_MODE_FLAG_N.SYNC and !DRM_MODE_FLAG_P.SYNC\n  drm/gem-shmem: revert the 8-byte alignment constraint\n  drm/gem-dma: revert the 8-byte alignment constraint\n  drm/panthor: Prevent potential UAF in group creation"
+  },
+  {
+    "sha": "d8cc0b917ba619c8f03d597f1a6612777f1096ed",
+    "author": "torvalds",
+    "date": "2025-12-13T05:15:16+00:00",
+    "message": "Merge tag 'i3c/for-6.19-2' of git://git.kernel.org/pub/scm/linux/kernel/git/i3c/linux\n\nPull further i3c update from Alexandre Belloni:\n \"We are removing a legacy API callback and having this sooner rather\n  than later will help ensuring no one introduces a new driver using it.\n\n  I've also added patches removing the \"__free(...) = NULL\" pattern\n  because I'm sure we won't avoid people sending those following the\n  mailing list discussion...\"\n\n* tag 'i3c/for-6.19-2' of git://git.kernel.org/pub/scm/linux/kernel/git/i3c/linux:\n  i3c: adi: Fix confusing cleanup.h syntax\n  i3c: master: Fix confusing cleanup.h syntax\n  i3c: master: cleanup callback .priv_xfers()\n  i3c: master: switch to use new callback .i3c_xfers() from .priv_xfers()"
+  },
+  {
+    "sha": "d324e9a91502184e0ac201293a6ec0fbe10458ed",
+    "author": "torvalds",
+    "date": "2025-12-13T05:09:06+00:00",
+    "message": "Merge tag 'rtc-6.19' of git://git.kernel.org/pub/scm/linux/kernel/git/abelloni/linux\n\nPull RTC updates from Alexandre Belloni:\n \"Subsystem:\n   - stop setting max_user_freq from the individual drivers as this has\n     not been hardware related for a while\n\n  New drivers:\n   - Andes ATCRTC100\n   - Apple SMC\n   - Nvidia VRS\n\n  Drivers:\n   - renesas-rtca3: add RZ/V2H support\n   - tegra: add ACPI support\"\n\n* tag 'rtc-6.19' of git://git.kernel.org/pub/scm/linux/kernel/git/abelloni/linux: (34 commits)\n  rtc: spacemit: MFD_SPACEMIT_P1 as dependencies\n  rtc: atcrtc100: Fix signedness bug in probe()\n  rtc: max31335: Fix ignored return value in set_alarm\n  rtc: gamecube: Check the return value of ioremap()\n  Documentation: ABI: testing: Fix \"upto\" typo in rtc-cdev\n  rtc: Add new rtc-macsmc driver for Apple Silicon Macs\n  dt-bindings: rtc: Add Apple SMC RTC\n  MAINTAINERS: drop unneeded file entry in NVIDIA VRS RTC DRIVER\n  rtc: isl12026: Add id_table\n  rtc: renesas-rtca3: Add support for multiple reset lines\n  dt-bindings: rtc: renesas,rz-rtca3: Add RZ/V2H support\n  rtc: tegra: Replace deprecated SIMPLE_DEV_PM_OPS\n  rtc: tegra: Add ACPI support\n  rtc: tegra: Use devm_clk_get_enabled() in probe\n  rtc: Kconfig: add MC34708 to mc13xxx help text\n  rtc: s35390a: use u8 instead of char for register buffer\n  rtc: nvvrs: add NVIDIA VRS RTC device driver\n  dt-bindings: rtc: Document NVIDIA VRS RTC\n  rtc: atcrtc100: Add ATCRTC100 RTC driver\n  MAINTAINERS: Add entry for ATCRTC100 RTC driver\n  ..."
+  },
+  {
+    "sha": "a919610db43b34621d0c3b333e12db9002caf5da",
+    "author": "torvalds",
+    "date": "2025-12-13T04:41:50+00:00",
+    "message": "Merge tag 'pwm/for-6.19-rc1-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/ukleinek/linux\n\nPull pwm fix from Uwe Kleine-König:\n \"Fix missing th1520 Kconfig dependencies\n\n  This tightens the dependency for the new pwm driver written in Rust to\n  make build bots and obviously also users happy\"\n\n* tag 'pwm/for-6.19-rc1-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/ukleinek/linux:\n  pwm: th1520: Fix missing Kconfig dependencies"
+  },
+  {
+    "sha": "a6bb419c1c0061abf164eb437bf0dc0281ba7369",
+    "author": "torvalds",
+    "date": "2025-12-13T04:36:57+00:00",
+    "message": "Merge tag 'gpio-fixes-for-v6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/brgl/linux\n\nPull gpio updates from Bartosz Golaszewski:\n\n - fix spinlock op type after conversion to lock guards\n\n - fix a memory leak in error path in gpio-regmap\n\n - Kconfig fixes in GPIO drivers\n\n - add a GPIO ACPI quirk for Dell Precision 7780\n\n - set of fixes for shared GPIO management\n\n* tag 'gpio-fixes-for-v6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/brgl/linux:\n  gpio: shared: make locking more fine-grained\n  gpio: shared: fix auxiliary device cleanup order\n  gpio: shared: check if a reference is populated before cleaning its resources\n  gpio: shared: fix NULL-pointer dereference in teardown path\n  gpio: shared: ignore disabled nodes when traversing the device-tree\n  gpiolib: acpi: Add quirk for Dell Precision 7780\n  gpio: tb10x: fix OF_GPIO dependency\n  gpio: qixis: select CONFIG_REGMAP_MMIO\n  gpio: regmap: Fix memleak in error path in gpio_regmap_register()\n  gpio: mmio: fix bad guard conversion"
+  },
+  {
+    "sha": "41572e2c05e5892ecdb18e47fd47f208ea648ec6",
+    "author": "torvalds",
+    "date": "2025-12-13T04:29:22+00:00",
+    "message": "Merge tag 'pci-v6.19-fixes-1' of git://git.kernel.org/pub/scm/linux/kernel/git/pci/pci\n\nPull PCI fix from Bjorn Helgaas:\n\n - Initialize rzg3s_pcie_msi_irq() MSI status bitmap before use (Claudiu\n   Beznea)\n\n* tag 'pci-v6.19-fixes-1' of git://git.kernel.org/pub/scm/linux/kernel/git/pci/pci:\n  PCI: rzg3s-host: Initialize MSI status bitmap before use"
+  },
+  {
+    "sha": "db9c4387391e09209d44d41c2791512ac45b9e3c",
+    "author": "torvalds",
+    "date": "2025-12-13T04:26:55+00:00",
+    "message": "Merge tag 'soundwire-6.19-rc1_updated' of git://git.kernel.org/pub/scm/linux/kernel/git/vkoul/soundwire\n\nPull soundwire updates from Vinod Koul:\n\n - Support for multiple sections in a BPT stream\n\n - Align DMA frame with BPT frames\n\n - Qualcomm support for v3.1.0 controllers\n\n* tag 'soundwire-6.19-rc1_updated' of git://git.kernel.org/pub/scm/linux/kernel/git/vkoul/soundwire:\n  soundwire: intel_ace2x: handle multi BPT sections\n  soundwire: pass sdw_bpt_section to cdns BPT helpers\n  soundwire: introduce BPT section\n  soundwire: intel_ace2x: add fake frame to BRA read command\n  soundwire: cadence_master: add fake_size parameter to sdw_cdns_prepare_read_dma_buffer\n  ASoC: SOF: Intel: export hda_sdw_bpt_get_buf_size_aligment\n  soundwire: cadence: export sdw_cdns_bpt_find_bandwidth\n  soundwire: cadence_master: set data_per_frame as frame capability\n  soundwire: only compute BPT stream in sdw_compute_dp0_port_params\n  soundwire: cadence_master: make frame index trace more readable\n  soundwire: qcom: adding support for v3.1.0\n  dt-bindings: soundwire: qcom: Document v3.1.0 version of IP block\n  soundwire: qcom: prepare for v3.x\n  soundwire: qcom: deprecate qcom,din/out-ports\n  dt-bindings: soundwire: qcom: deprecate qcom,din/out-ports\n  soundwire: qcom: remove unused rd_fifo_depth\n  of: base: Add of_property_read_u8_index"
+  },
+  {
+    "sha": "7f3c8f9191254654e6a88cd757ff079dafbd2f0b",
+    "author": "torvalds",
+    "date": "2025-12-13T04:09:10+00:00",
+    "message": "Merge tag 'sound-fix-6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound\n\nPull sound fixes from Takashi Iwai:\n \"The only slightly large change is the enablement of CIX HD-audio\n  controller, which took a bit time to be cooked up, while most of other\n  changes are device-specific small trivial fixes:\n\n   - Default disablement of the kconfig for decades old pre-release\n     alsa-lib PCM API; it's only the default config value change, so it\n     can't lead to any regressions for the existing setups\n\n   - Support for CIX HD-audio controller\n\n   - A few ASoC ACP fixes\n\n   - Fixes for ASoC cirrus, bcm, wcd, qcom, ak platforms\n\n   - Trivial hardening for FireWire and USB-audio\n\n   - HD-audio Intel binding fix and quirks\"\n\n* tag 'sound-fix-6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound: (30 commits)\n  ALSA: hda/tas2781: Add new quirk for HP new project\n  ALSA: hda: cix-ipbloq: Use modern PM ops\n  ALSA: hda: intel-dsp-config: Prefer legacy driver as fallback\n  ASoC: amd: acp: update tdm channels for specific DAI\n  ASoC: cs35l56: Fix incorrect select SND_SOC_CS35L56_CAL_SYSFS_COMMON\n  ALSA: firewire-motu: add bounds check in put_user loop for DSP events\n  ASoC: cs35l41: Always return 0 when a subsystem ID is found\n  ALSA: uapi: Fix typo in asound.h comment\n  ALSA: Do not build obsolete API\n  ALSA: hda: add CIX IPBLOQ HDA controller support\n  ALSA: hda/core: add addr_offset field for bus address translation\n  ALSA: hda: dt-bindings: add CIX IPBLOQ HDA controller support\n  ALSA: hda/realtek: Add support for ASUS UM3406GA\n  ALSA: hda/realtek: Add support for HP Turbine Laptops\n  ALSA: usb-audio: Initialize status1 to fix uninitialized symbol errors\n  ALSA: firewire-motu: fix buffer overflow in hwdep read for DSP events\n  ALSA: hda: cs35l41: Fix NULL pointer dereference in cs35l41_hda_read_acpi()\n  ASoC: cros_ec_codec: Remove unnecessary selection of CRYPTO\n  ASoc: qcom: q6afe: fix bad guard conversion\n  ASoC: rockchip: Fix Wvoid-pointer-to-enum-cast warning (again)\n  ..."
+  },
+  {
+    "sha": "5300831555cc6bb45bf824262ac044e8891b581c",
+    "author": "airlied",
+    "date": "2025-12-13T00:54:28+00:00",
+    "message": "Merge tag 'drm-misc-fixes-2025-12-10' of https://gitlab.freedesktop.org/drm/misc/kernel into drm-fixes\n\ndrm-misc-fixes for v6.19-rc1:\n- Fix stack usage warning in novatek-nt35560.\n- Fix s/r, i2c issues in nouveau and update string handling.\n- Ignore spurious PLL_UNLOCK bit in ti-sn65dsi83.\n- Handle IS_ERR vs NULL in drm_plane_create_hotspot_properties().\n- Fix devcoredump crash on reading evicted bo's.\n- Fix bigendian handling in mgag200.\n- Fix probe failure in tilcdc.\n\nSigned-off-by: Dave Airlie <airlied@redhat.com>\nFrom: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>\nLink: https://patch.msgid.link/6c371dc1-08bf-4a34-895c-9ef348b6061b@linux.intel.com"
+  },
+  {
+    "sha": "136209e6bd981e60db6c0e78f2919ff2f92312d4",
+    "author": null,
+    "date": "2025-12-08T02:07:52+00:00",
+    "message": "i3c: adi: Fix confusing cleanup.h syntax\n\nInitializing automatic __free variables to NULL without need (e.g.\nbranches with different allocations), followed by actual allocation is\nin contrary to explicit coding rules guiding cleanup.h:\n\n\"Given that the \"__free(...) = NULL\" pattern for variables defined at\nthe top of the function poses this potential interdependency problem the\nrecommendation is to always define and assign variables in one statement\nand not group variable definitions at the top of the function when\n__free() is used.\"\n\nCode does not have a bug, but is less readable and uses discouraged\ncoding practice, so fix that by moving declaration to the place of\nassignment.\n\nSigned-off-by: Krzysztof Kozlowski <krzysztof.kozlowski@oss.qualcomm.com>\nLink: https://patch.msgid.link/20251208020750.4727-4-krzysztof.kozlowski@oss.qualcomm.com\nSigned-off-by: Alexandre Belloni <alexandre.belloni@bootlin.com>"
+  },
+  {
+    "sha": "cc3b18f9fedec517e35b973d14670a37290f133c",
+    "author": null,
+    "date": "2025-12-08T02:07:51+00:00",
+    "message": "i3c: master: Fix confusing cleanup.h syntax\n\nInitializing automatic __free variables to NULL without need (e.g.\nbranches with different allocations), followed by actual allocation is\nin contrary to explicit coding rules guiding cleanup.h:\n\n\"Given that the \"__free(...) = NULL\" pattern for variables defined at\nthe top of the function poses this potential interdependency problem the\nrecommendation is to always define and assign variables in one statement\nand not group variable definitions at the top of the function when\n__free() is used.\"\n\nCode does not have a bug, but is less readable and uses discouraged\ncoding practice, so fix that by moving declaration to the place of\nassignment.\n\nNot that other existing usage of __free() in this context is a corret\nexception initialized to NULL, because the actual allocation is branched\nin if().\n\nSigned-off-by: Krzysztof Kozlowski <krzysztof.kozlowski@oss.qualcomm.com>\nLink: https://patch.msgid.link/20251208020750.4727-3-krzysztof.kozlowski@oss.qualcomm.com\nSigned-off-by: Alexandre Belloni <alexandre.belloni@bootlin.com>"
+  },
+  {
+    "sha": "41b80d43d9a00a302b5559baa7ebafc28dd54793",
+    "author": "nxpfrankli",
+    "date": "2025-12-03T20:45:51+00:00",
+    "message": "i3c: master: cleanup callback .priv_xfers()\n\nRemove the .priv_xfers() callback from the framework after all master\ncontroller drivers have switched to use the new .i3c_xfers() callback.\n\nSigned-off-by: Frank Li <Frank.Li@nxp.com>\nTested-by: Tommaso Merciai <tommaso.merciai.xr@bp.renesas.com>\nLink: https://patch.msgid.link/20251203-i3c_xfer_cleanup_master-v2-2-7dd94d04ee2d@nxp.com\nSigned-off-by: Alexandre Belloni <alexandre.belloni@bootlin.com>"
+  },
+  {
+    "sha": "9551a26f17d9445eed497bd7c639d48dfc3c0af4",
+    "author": "torvalds",
+    "date": "2025-12-12T17:44:03+00:00",
+    "message": "Merge tag 'loongarch-6.19' of git://git.kernel.org/pub/scm/linux/kernel/git/chenhuacai/linux-loongson\n\nPull LoongArch updates from Huacai Chen:\n\n - Add basic LoongArch32 support\n\n   Note: Build infrastructures of LoongArch32 are not enabled yet,\n   because we need to adjust irqchip drivers and wait for GNU toolchain\n   be upstream first.\n\n - Select HAVE_ARCH_BITREVERSE in Kconfig\n\n - Fix build and boot for CONFIG_RANDSTRUCT\n\n - Correct the calculation logic of thread_count\n\n - Some bug fixes and other small changes\n\n* tag 'loongarch-6.19' of git://git.kernel.org/pub/scm/linux/kernel/git/chenhuacai/linux-loongson: (22 commits)\n  LoongArch: Adjust default config files for 32BIT/64BIT\n  LoongArch: Adjust VDSO/VSYSCALL for 32BIT/64BIT\n  LoongArch: Adjust misc routines for 32BIT/64BIT\n  LoongArch: Adjust user accessors for 32BIT/64BIT\n  LoongArch: Adjust system call for 32BIT/64BIT\n  LoongArch: Adjust module loader for 32BIT/64BIT\n  LoongArch: Adjust time routines for 32BIT/64BIT\n  LoongArch: Adjust process management for 32BIT/64BIT\n  LoongArch: Adjust memory management for 32BIT/64BIT\n  LoongArch: Adjust boot & setup for 32BIT/64BIT\n  LoongArch: Adjust common macro definitions for 32BIT/64BIT\n  LoongArch: Add adaptive CSR accessors for 32BIT/64BIT\n  LoongArch: Add atomic operations for 32BIT/64BIT\n  LoongArch: Add new PCI ID for pci_fixup_vgadev()\n  LoongArch: Add and use some macros for AVEC\n  LoongArch: Correct the calculation logic of thread_count\n  LoongArch: Use unsigned long for _end and _text\n  LoongArch: Use __pmd()/__pte() for swap entry conversions\n  LoongArch: Fix arch_dup_task_struct() for CONFIG_RANDSTRUCT\n  LoongArch: Fix build errors for CONFIG_RANDSTRUCT\n  ..."
+  },
+  {
+    "sha": "187d0801404f415f22c0b31531982c7ea97fa341",
+    "author": "torvalds",
+    "date": "2025-12-12T10:08:09+00:00",
+    "message": "Merge tag 'libcrypto-fixes-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/linux\n\nPull crypto library fixes from Eric Biggers:\n \"Fixes for some recent regressions as well as some longstanding issues:\n\n   - Fix incorrect output from the arm64 NEON implementation of GHASH\n\n   - Merge the ksimd scopes in the arm64 XTS code to reduce stack usage\n\n   - Roll up the BLAKE2b round loop on 32-bit kernels to greatly reduce\n     code size and stack usage\n\n   - Add missing RISCV_EFFICIENT_VECTOR_UNALIGNED_ACCESS dependency\n\n   - Fix chacha-riscv64-zvkb.S to not use frame pointer for data\"\n\n* tag 'libcrypto-fixes-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/linux:\n  crypto: arm64/ghash - Fix incorrect output from ghash-neon\n  crypto/arm64: sm4/xts - Merge ksimd scopes to reduce stack bloat\n  crypto/arm64: aes/xts - Use single ksimd scope to reduce stack bloat\n  lib/crypto: blake2s: Replace manual unrolling with unrolled_full\n  lib/crypto: blake2b: Roll up BLAKE2b round loop on 32-bit\n  lib/crypto: riscv: Depend on RISCV_EFFICIENT_VECTOR_UNALIGNED_ACCESS\n  lib/crypto: riscv/chacha: Avoid s0/fp register"
+  },
+  {
+    "sha": "35ebee7e720944a66befb5899c72ce1e01dfa44e",
+    "author": "torvalds",
+    "date": "2025-12-12T10:04:18+00:00",
+    "message": "Merge tag 'block-6.19-20251211' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux\n\nPull block fixes from Jens Axboe:\n\n - Always initialize DMA state, fixing a potentially nasty issue on the\n   block side\n\n - btrfs zoned write fix with cached zone reports\n\n - Fix corruption issues in bcache with chained bio's, and further make\n   it clear that the chained IO handler is simply a marker, it's not\n   code meant to be executed\n\n - Kill old code dealing with synchronous IO polling in the block layer,\n   that has been dead for a long time. Only async polling is supported\n   these days\n\n - Fix a lockdep issue in tag_set management, moving it to RCU\n\n - Fix an issue with ublks bio_vec iteration\n\n - Don't unconditionally enforce blocking issue of ublk control\n   commands, allow some of them with non-blocking issue as they\n   do not block\n\n* tag 'block-6.19-20251211' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux:\n  blk-mq-dma: always initialize dma state\n  blk-mq: delete task running check in blk_hctx_poll()\n  block: fix cached zone reports on devices with native zone append\n  block: Use RCU in blk_mq_[un]quiesce_tagset() instead of set->tag_list_lock\n  ublk: don't mutate struct bio_vec in iteration\n  block: prohibit calls to bio_chain_endio\n  bcache: fix improper use of bi_end_io\n  ublk: allow non-blocking ctrl cmds in IO_URING_F_NONBLOCK issue"
+  },
+  {
+    "sha": "14df4eb7e7faeecec1eaa88febb6a27308a470f5",
+    "author": "torvalds",
+    "date": "2025-12-12T10:01:32+00:00",
+    "message": "Merge tag 'io_uring-6.19-20251211' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux\n\nPull io_uring fix from Jens Axboe:\n \"Single fix for io_uring headed to stable, fixing an issue introduced\n  with the min_wait support earlier this year, where SQPOLL didn't get\n  correctly woken if an event arrived once the event waiting has\n  finished the min_wait portion.\n\n  As we already have regression tests for this added and people\n  reporting new failures there, let's get this one flushed out\n  so it can bubble back down to stable as well\"\n\n* tag 'io_uring-6.19-20251211' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux:\n  io_uring: fix min_wait wakeups for SQPOLL"
+  },
+  {
+    "sha": "ce825345dd63f62cdab80a8c45f943bb65511aa1",
+    "author": "torvalds",
+    "date": "2025-12-12T09:59:19+00:00",
+    "message": "Merge tag 'v6.19-rc-smb3-server-fixes' of git://git.samba.org/ksmbd\n\nPull smb server fixes from Steve French:\n\n - minor cleanup\n\n - minor update to comment to avoid confusion about fs type\n\n* tag 'v6.19-rc-smb3-server-fixes' of git://git.samba.org/ksmbd:\n  smb/server: add comment to FileSystemName of FileFsAttributeInformation\n  smb/server: remove unused nterr.h\n  smb/server: rename include guard in smb_common.h"
+  },
+  {
+    "sha": "10cc3e9a11dc0d5d8450ecf6db99551c867f3203",
+    "author": "torvalds",
+    "date": "2025-12-12T09:56:25+00:00",
+    "message": "Merge tag 'v6.19-rc-part2-smb3-client-fixes' of git://git.samba.org/sfrench/cifs-2.6\n\nPull smb client fixes from Steve French:\n\n - Fix incorrect error code defines\n\n - Add missing error code definitions\n\n - Add parenthesis around NT_STATUS code defines to fix checkpatch\n   warnings\n\n - Remove some duplicated protocol definitions, moving to common code\n   shared by client and server\n\n - Add missing protocol documentation reference (for change notify)\n\n - Correct struct definition (for duplicate_extents_to_file_ex)\n\n* tag 'v6.19-rc-part2-smb3-client-fixes' of git://git.samba.org/sfrench/cifs-2.6:\n  smb/client: remove DeviceType Flags and Device Characteristics definitions\n  smb: move File Attributes definitions into common/fscc.h\n  smb: update struct duplicate_extents_to_file_ex\n  smb: move file_notify_information to common/fscc.h\n  smb: move SMB2 Notify Action Flags into common/smb2pdu.h\n  smb: move notify completion filter flags into common/smb2pdu.h\n  smb/client: add parentheses to NT error code definitions containing bitwise OR operator\n  smb: add documentation references for smb2 change notify definitions\n  smb/client: add 4 NT error code definitions\n  smb/client: fix NT_STATUS_UNABLE_TO_FREE_VM value\n  smb/client: fix NT_STATUS_DEVICE_DOOR_OPEN value\n  smb/client: fix NT_STATUS_NO_DATA_DETECTED value"
+  },
+  {
+    "sha": "6bb34aff1ebdd4ee8ea1721068f74d476d707f01",
+    "author": "torvalds",
+    "date": "2025-12-12T09:52:42+00:00",
+    "message": "Merge tag 'nfs-for-6.19-1' of git://git.linux-nfs.org/projects/trondmy/linux-nfs\n\nPull NFS client updates from Trond Myklebust:\n \"Bugfixes:\n   - Fix 'nlink' attribute update races when unlinking a file\n   - Add missing initialisers for the directory verifier in various\n     places\n   - Don't regress the NFSv4 open state due to misordered racing replies\n   - Ensure the NFSv4.x callback server uses the correct transport\n     connection\n   - Fix potential use-after-free races when shutting down the NFSv4.x\n     callback server\n   - Fix a pNFS layout commit crash\n   - Assorted fixes to ensure correct propagation of mount options when\n     the client crosses a filesystem boundary and triggers the VFS\n     automount code\n   - More localio fixes\n\n  Features and cleanups:\n   - Add initial support for basic directory delegations\n   - SunRPC back channel code cleanups\"\n\n* tag 'nfs-for-6.19-1' of git://git.linux-nfs.org/projects/trondmy/linux-nfs: (24 commits)\n  NFSv4: Handle NFS4ERR_NOTSUPP errors for directory delegations\n  nfs/localio: remove 61 byte hole from needless ____cacheline_aligned\n  nfs/localio: remove alignment size checking in nfs_is_local_dio_possible\n  NFS: Fix up the automount fs_context to use the correct cred\n  NFS: Fix inheritance of the block sizes when automounting\n  NFS: Automounted filesystems should inherit ro,noexec,nodev,sync flags\n  Revert \"nfs: ignore SB_RDONLY when mounting nfs\"\n  Revert \"nfs: clear SB_RDONLY before getting superblock\"\n  Revert \"nfs: ignore SB_RDONLY when remounting nfs\"\n  NFS: Add a module option to disable directory delegations\n  NFS: Shortcut lookup revalidations if we have a directory delegation\n  NFS: Request a directory delegation during RENAME\n  NFS: Request a directory delegation on ACCESS, CREATE, and UNLINK\n  NFS: Add support for sending GDD_GETATTR\n  NFSv4/pNFS: Clear NFS_INO_LAYOUTCOMMIT in pnfs_mark_layout_stateid_invalid\n  NFSv4.1: protect destroying and nullifying bc_serv structure\n  SUNRPC: new helper function for stopping backchannel server\n  SUNRPC: cleanup common code in backchannel request\n  NFSv4.1: pass transport for callback shutdown\n  NFSv4: ensure the open stateid seqid doesn't go backwards\n  ..."
+  },
+  {
+    "sha": "bdae29d6512ddc589200b9ae6bda467bdbab863d",
+    "author": "edumazet",
+    "date": "2025-12-05T10:07:53+00:00",
+    "message": "rseq: Always inline rseq_debug_syscall_return()\n\nTo get the full benefit of:\n\n  eaa9088d568c (\"rseq: Use static branch for syscall exit debug when GENERIC_IRQ_ENTRY=y\")\n\nclang needs an __always_inline instead of a plain inline qualifier:\n\n\t$ for i in {1..10}; do taskset -c 4 perf5 bench syscall basic -l 100000000 | grep \"ops/sec\"; done\n\n\t\t Before\t     After\n\tops/sec  15424491    15872221   +2.9%\n\nSigned-off-by: Eric Dumazet <edumazet@google.com>\nSigned-off-by: Thomas Gleixner <tglx@linutronix.de>\nSigned-off-by: Ingo Molnar <mingo@kernel.org>\nReviewed-by: Mathieu Desnoyers <mathieu.desnoyers@efficios.com>\nLink: https://patch.msgid.link/20251205100753.4073221-1-edumazet@google.com"
+  },
+  {
+    "sha": "d36067d6ea00827e9b8fc087d8216710cb99b3cf",
+    "author": "bjackman",
+    "date": "2025-12-07T03:53:18+00:00",
+    "message": "bug: Hush suggest-attribute=format for __warn_printf()\n\nRecent additions to this function cause GCC 14.3.0 to get excited\n(W=1) and suggest a missing attribute:\n\n\tlib/bug.c: In function '__warn_printf':\n\tlib/bug.c:187:25: error: function '__warn_printf' be a candidate for 'gnu_printf' format attribute [-Werror=suggest-attribute=format]\n\t  187 |                         vprintk(fmt, *args);\n\t      |                         ^~~~~~~\n\nDisable the diagnostic locally, following the pattern used for stuff\nlike va_format().\n\nFixes: 5c47b7f3d1a9 (\"bug: Add BUG_FORMAT_ARGS infrastructure\")\nSigned-off-by: Brendan Jackman <jackmanb@google.com>\nSigned-off-by: Peter Zijlstra (Intel) <peterz@infradead.org>\nSigned-off-by: Ingo Molnar <mingo@kernel.org>\nLink: https://patch.msgid.link/20251207-warn-printf-gcc-v1-1-b597d612b94b@google.com"
+  },
+  {
+    "sha": "b5e51ef787660bffe9cd059e7abe32f3b1667a98",
+    "author": "hcahca",
+    "date": "2025-12-08T20:06:58+00:00",
+    "message": "bug: Let report_bug_entry() provide the correct bugaddr\n\nreport_bug_entry() always provides zero for bugaddr but could easily\nextract the correct address from the provided bug_entry. Just do that to\nhave proper warning messages.\n\nE.g. adding an artificial:\n\n  void foo(void) { WARN_ONCE(1, \"bar\"); }\n\nfunction generates this warning message:\n\n  WARNING: arch/s390/kernel/setup.c:1017 at 0x0, CPU#0: swapper/0/0\n                                            ^^^\n\nWith the correct bug address this changes to:\n\n  WARNING: arch/s390/kernel/setup.c:1017 at foo+0x1c/0x40, CPU#0: swapper/0/0\n                                            ^^^^^^^^^^^^^\n\nFixes: 7d2c27a0ec5e (\"bug: Add report_bug_entry()\")\nSigned-off-by: Heiko Carstens <hca@linux.ibm.com>\nSigned-off-by: Peter Zijlstra (Intel) <peterz@infradead.org>\nSigned-off-by: Ingo Molnar <mingo@kernel.org>\nLink: https://patch.msgid.link/20251208200658.3431511-1-hca@linux.ibm.com"
+  },
+  {
+    "sha": "37a1cefd4d4e0b3d12f140e8a265757444fa6957",
+    "author": "airlied",
+    "date": "2025-12-12T08:57:43+00:00",
+    "message": "Merge tag 'drm-intel-next-fixes-2025-12-12' of https://gitlab.freedesktop.org/drm/i915/kernel into drm-next\n\ndrm/i915 fixes for v6.19-rc1:\n- Fix format string truncation warning\n- FIx runtime PM reference during fbdev BO creation\n\nSigned-off-by: Dave Airlie <airlied@redhat.com>\nFrom: Jani Nikula <jani.nikula@intel.com>\nLink: https://patch.msgid.link/281309f78560bcceebac8d5c0511efe66baf641c@intel.com"
+  },
+  {
+    "sha": "9415f749d34b926b9e4853da1462f4d941f89a0d",
+    "author": null,
+    "date": "2025-12-12T08:49:43+00:00",
+    "message": "perf/x86/intel: Fix NULL event dereference crash in handle_pmi_common()\n\nhandle_pmi_common() may observe an active bit set in cpuc->active_mask\nwhile the corresponding cpuc->events[] entry has already been cleared,\nwhich leads to a NULL pointer dereference.\n\nThis can happen when interrupt throttling stops all events in a group\nwhile PEBS processing is still in progress. perf_event_overflow() can\ntrigger perf_event_throttle_group(), which stops the group and clears\nthe cpuc->events[] entry, but the active bit may still be set when\nhandle_pmi_common() iterates over the events.\n\nThe following recent fix:\n\n  7e772a93eb61 (\"perf/x86: Fix NULL event access and potential PEBS record loss\")\n\nmoved the cpuc->events[] clearing from x86_pmu_stop() to x86_pmu_del() and\nrelied on cpuc->active_mask/pebs_enabled checks. However,\nhandle_pmi_common() can still encounter a NULL cpuc->events[] entry\ndespite the active bit being set.\n\nAdd an explicit NULL check on the event pointer before using it,\nto cover this legitimate scenario and avoid the NULL dereference crash.\n\nFixes: 7e772a93eb61 (\"perf/x86: Fix NULL event access and potential PEBS record loss\")\nReported-by: kitta <kitta@linux.alibaba.com>\nCo-developed-by: kitta <kitta@linux.alibaba.com>\nSigned-off-by: Evan Li <evan.li@linux.alibaba.com>\nSigned-off-by: Ingo Molnar <mingo@kernel.org>\nLink: https://patch.msgid.link/20251212084943.2124787-1-evan.li@linux.alibaba.com\nCloses: https://bugzilla.kernel.org/show_bug.cgi?id=220855"
+  },
+  {
+    "sha": "6ae7ec86de355dc00702364e93339d2902ff847b",
+    "author": "airlied",
+    "date": "2025-12-11T23:26:26+00:00",
+    "message": "Merge tag 'amd-drm-fixes-6.19-2025-12-11' of https://gitlab.freedesktop.org/agd5f/linux into drm-next\n\namd-drm-fixes-6.19-2025-12-11:\n\namdgpu:\n- SI fix\n- DC reduce stack usage\n- HDMI fixes\n- VCN 4.0.5 fix\n- DP MST fix\n- DC memory allocation fix\n\namdkfd:\n- SVM fix\n- Trap handler fix\n- VGPR fixes for GC 11.5\n\nSigned-off-by: Dave Airlie <airlied@redhat.com>\n\nFrom: Alex Deucher <alexander.deucher@amd.com>\nLink: https://patch.msgid.link/20251211195600.1641924-1-alexander.deucher@amd.com"
+  },
+  {
+    "sha": "685f27c1c5fee205de2a505fd353d862ee2163ab",
+    "author": "airlied",
+    "date": "2025-12-11T23:20:22+00:00",
+    "message": "Merge tag 'drm-misc-next-fixes-2025-12-10' of https://gitlab.freedesktop.org/drm/misc/kernel into drm-next\n\ndrm-misc-next-fixes for v6.19-rc1:\n- Fix uaf in panthor.\n- Revert 8 byte alignment constraint for pitch in dumb bo's.\n- Fix DRM_MODE_FLAG_N.SYNC and !DRM_MODE_FLAG_P.SYNC handling renasas.\n\nSigned-off-by: Dave Airlie <airlied@redhat.com>\nFrom: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>\nLink: https://patch.msgid.link/a82c2a2a-314f-403b-85bf-9b3ee09b903c@linux.intel.com"
+  },
+  {
+    "sha": "fd324768eb2c132bb111ba76675b4c72406251d9",
+    "author": "jimxbj-dot",
+    "date": "2025-12-11T09:24:26+00:00",
+    "message": "ALSA: hda/tas2781: Add new quirk for HP new project\n\nAdd new vendor_id and subsystem_id in quirk for HP new project (NexusX).\n\nSigned-off-by: Baojun Xu <baojun.xu@ti.com>\nLink: https://patch.msgid.link/20251211092427.1648-1-baojun.xu@ti.com\nSigned-off-by: Takashi Iwai <tiwai@suse.de>"
+  },
+  {
+    "sha": "e33a6abdb744e3a015dd53e997c690081a8b985d",
+    "author": "nathanchance",
+    "date": "2025-12-11T01:50:03+00:00",
+    "message": "ALSA: hda: cix-ipbloq: Use modern PM ops\n\nWhen building without CONFIG_PM_SLEEP, there are several warnings (or\nerrors with CONFIG_WERROR=y / W=e) from the cix-ipbloq driver:\n\n  sound/hda/controllers/cix-ipbloq.c:378:12: error: 'cix_ipbloq_hda_runtime_resume' defined but not used [-Werror=unused-function]\n    378 | static int cix_ipbloq_hda_runtime_resume(struct device *dev)\n        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n  sound/hda/controllers/cix-ipbloq.c:362:12: error: 'cix_ipbloq_hda_runtime_suspend' defined but not used [-Werror=unused-function]\n    362 | static int cix_ipbloq_hda_runtime_suspend(struct device *dev)\n        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n  sound/hda/controllers/cix-ipbloq.c:349:12: error: 'cix_ipbloq_hda_resume' defined but not used [-Werror=unused-function]\n    349 | static int cix_ipbloq_hda_resume(struct device *dev)\n        |            ^~~~~~~~~~~~~~~~~~~~~\n  sound/hda/controllers/cix-ipbloq.c:336:12: error: 'cix_ipbloq_hda_suspend' defined but not used [-Werror=unused-function]\n    336 | static int cix_ipbloq_hda_suspend(struct device *dev)\n        |            ^~~~~~~~~~~~~~~~~~~~~~\n\nWhen CONFIG_PM and CONFIG_PM_SLEEP are unset, SET_SYSTEM_SLEEP_PM_OPS()\nand SET_RUNTIME_PM_OPS() evaluate to nothing, so these functions appear\nunused to the compiler in this configuration.\n\nUse the modern SYSTEM_SLEEP_PM_OPS and RUNTIME_PM_OPS macros to resolve\nthese warnings, which is what they are intended to do. Additionally,\nwrap &cix_ipbloq_hda_pm in pm_ptr() to ensure the compiler can drop the\nentire structure when CONFIG_PM is unset.\n\nFixes: d91e9bd10125 (\"ALSA: hda: add CIX IPBLOQ HDA controller support\")\nSigned-off-by: Nathan Chancellor <nathan@kernel.org>\nLink: https://patch.msgid.link/20251211-hda-cix-ipbloq-modern-pm-ops-v1-1-c7a5580af021@kernel.org\nSigned-off-by: Takashi Iwai <tiwai@suse.de>"
+  },
+  {
+    "sha": "b13efb535962e26f722eada0a5b14f7bffbed29a",
+    "author": "tiwai",
+    "date": "2025-12-11T08:34:00+00:00",
+    "message": "Merge tag 'asoc-fix-v6.19-merge-window' of https://git.kernel.org/pub/scm/linux/kernel/git/broonie/sound into for-linus\n\nASoC: Fixes for v6.19\n\nA small pile of fixes that came in during the merge window, it's all\nfairly standard device specific stuff."
+  },
+  {
+    "sha": "ab0347e67dacd121eedc2d3a6ee6484e5ccca43d",
+    "author": null,
+    "date": "2025-11-14T08:41:20+00:00",
+    "message": "smb/client: remove DeviceType Flags and Device Characteristics definitions\n\nThese definitions are already in common/smb2pdu.h, so remove the duplicated\nones from the client.\n\nCo-developed-by: ChenXiaoSong <chenxiaosong@kylinos.cn>\nSigned-off-by: ChenXiaoSong <chenxiaosong@kylinos.cn>\nSigned-off-by: ZhangGuoDong <zhangguodong@kylinos.cn>\nSigned-off-by: Steve French <stfrench@microsoft.com>"
+  },
+  {
+    "sha": "2b6abb893e719f4d77f7c43975e77cdadd3bbf1e",
+    "author": null,
+    "date": "2025-11-30T13:17:15+00:00",
+    "message": "smb: move File Attributes definitions into common/fscc.h\n\nThese definitions are specified in MS-FSCC 2.6, so move them into fscc.h.\n\nModify the following places:\n\n  - FILE_ATTRIBUTE__MASK -> FILE_ATTRIBUTE_MASK\n  - Update FILE_ATTRIBUTE_MASK value\n  - cpu_to_le32(constant) -> cpu_to_le32(MACRO DEFINITION)\n\nSigned-off-by: ChenXiaoSong <chenxiaosong@kylinos.cn>\nSigned-off-by: Steve French <stfrench@microsoft.com>"
+  },
+  {
+    "sha": "c97503321ed3fde6e53320b388ea23118d2473d7",
+    "author": null,
+    "date": "2025-12-01T06:59:38+00:00",
+    "message": "smb: update struct duplicate_extents_to_file_ex\n\nAdd the missing field to the structure (see MS-FSCC 2.3.9.2), and correct\nthe section number in the documentation reference.\n\nSigned-off-by: ChenXiaoSong <chenxiaosong@kylinos.cn>\nSigned-off-by: Steve French <stfrench@microsoft.com>"
+  },
+  {
+    "sha": "d358e5254674b70f34c847715ca509e46eb81e6f",
+    "author": "torvalds",
+    "date": "2025-12-11T03:13:29+00:00",
+    "message": "Merge tag 'for-6.19/dm-changes' of git://git.kernel.org/pub/scm/linux/kernel/git/device-mapper/linux-dm\n\nPull device mapper updates from Mikulas Patocka:\n\n - convert crypto_shash users to direct crypto library use with simpler\n   and faster code and reduced stack usage (Eric Biggers):\n\n     - the dm-verity SHA-256 conversion also teaches it to do two-way\n       interleaved hashing for added performance\n\n     - dm-crypt MD5 conversion (used for Loop-AES compatibility)\n\n - added document for for takeover/reshape raid1 -> raid5 examples (Heinz Mauelshagen)\n\n - fix dm-vdo kerneldoc warnings (Matthew Sakai)\n\n - various random fixes and cleanups\n\n* tag 'for-6.19/dm-changes' of git://git.kernel.org/pub/scm/linux/kernel/git/device-mapper/linux-dm: (29 commits)\n  dm pcache: fix segment info indexing\n  dm pcache: fix cache info indexing\n  dm-pcache: advance slot index before writing slot\n  dm raid: add documentation for takeover/reshape raid1 -> raid5 table line examples\n  dm log-writes: Add missing set_freezable() for freezable kthread\n  dm-raid: fix possible NULL dereference with undefined raid type\n  dm-snapshot: fix 'scheduling while atomic' on real-time kernels\n  dm: ignore discard return value\n  MAINTAINERS: add Benjamin Marzinski as a device mapper maintainer\n  dm-mpath: Simplify the setup_scsi_dh code\n  dm vdo: fix kerneldoc warnings\n  dm-bufio: align write boundary on physical block size\n  dm-crypt: enable DM_TARGET_ATOMIC_WRITES\n  dm: test for REQ_ATOMIC in dm_accept_partial_bio()\n  dm-verity: remove useless mempool\n  dm-verity: disable recursive forward error correction\n  dm-ebs: Mark full buffer dirty even on partial write\n  dm mpath: enable DM_TARGET_ATOMIC_WRITES\n  dm verity fec: Expose corrected block count via status\n  dm: Don't warn if IMA_DISABLE_HTABLE is not enabled\n  ..."
+  },
+  {
+    "sha": "8c8081cc599fcafa25371d50959c17e154f9fd08",
+    "author": "torvalds",
+    "date": "2025-12-11T00:57:08+00:00",
+    "message": "Merge tag 'spi-fix-v6.19-merge-window' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/spi\n\nPull spi fixes from Mark Brown:\n \"A few small fixes for SPI that came in during the merge window,\n  nothing too exciting here\"\n\n* tag 'spi-fix-v6.19-merge-window' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/spi:\n  spi: microchip-core: Fix an error handling path in mchp_corespi_probe()\n  spi: cadence-qspi: Fix runtime PM imbalance in probe"
+  },
+  {
+    "sha": "31ca9ff64ae91283436739ce3277facb89c7901d",
+    "author": "torvalds",
+    "date": "2025-12-11T00:54:59+00:00",
+    "message": "Merge tag 'regulator-fix-v6.19-merge-window' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/regulator\n\nPull regulator fixes from Mark Brown:\n \"A few fixes that came in during the merge window, nothing too\n  exciting - the one core fix improves error propagation from gpiolib\n  which hopefully shouldn't actually happen but is safer\"\n\n* tag 'regulator-fix-v6.19-merge-window' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/regulator:\n  regulator: spacemit: Align input supply name with the DT binding\n  regulator: fixed: Rely on the core freeing the enable GPIO\n  regulator: check the return value of gpiod_set_value_cansleep()"
+  },
+  {
+    "sha": "601cc399a01049efa76be8f496541315dc9cf914",
+    "author": "arndb",
+    "date": "2025-12-04T10:01:58+00:00",
+    "message": "mm: memfd_luo: add CONFIG_SHMEM dependency\n\nThe new memfd code fails to link without SHMEM:\n\naarch64-linux-ld: mm/memfd_luo.o: in function `memfd_luo_retrieve_folios':\nmemfd_luo.c:(.text.memfd_luo_retrieve_folios+0xdc): undefined reference to `shmem_add_to_page_cache'\nmemfd_luo.c:(.text.memfd_luo_retrieve_folios+0x11c): undefined reference to `shmem_inode_acct_blocks'\nmemfd_luo.c:(.text.memfd_luo_retrieve_folios+0x134): undefined reference to `shmem_recalc_inode'\n\nAdd a Kconfig dependency to disallow that configuration.\n\nLink: https://lkml.kernel.org/r/20251204100203.1034394-1-arnd@kernel.org\nFixes: b3749f174d68 (\"mm: memfd_luo: allow preserving memfd\")\nSigned-off-by: Arnd Bergmann <arnd@arndb.de>\nReviewed-by: Pratyush Yadav <pratyush@kernel.org>\nAcked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>\nReviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "402736a591b040360d36cfc27f6c371103177641",
+    "author": "arndb",
+    "date": "2025-12-04T10:28:59+00:00",
+    "message": "mm: shmem: avoid build warning for CONFIG_SHMEM=n\n\nThe newly added 'flags' variable is unused and causes a warning if\nCONFIG_SHMEM is disabled, since the shmem_acct_size() macro it is passed\ninto does nothing:\n\nmm/shmem.c: In function '__shmem_file_setup':\nmm/shmem.c:5816:23: error: unused variable 'flags' [-Werror=unused-variable]\n 5816 |         unsigned long flags = (vm_flags & VM_NORESERVE) ? SHMEM_F_NORESERVE : 0;\n      |                       ^~~~~\n\nReplace the two macros with equivalent inline functions to get the\nargument checking.\n\nLink: https://lkml.kernel.org/r/20251204102905.1048000-1-arnd@kernel.org\nFixes: 6ff1610ced56 (\"mm: shmem: use SHMEM_F_* flags instead of VM_* flags\")\nSigned-off-by: Arnd Bergmann <arnd@arndb.de>\nAcked-by: David Hildenbrand (Red Hat) <david@kernel.org>\nAcked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>\nReviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>\nReviewed-by: Pratyush Yadav <pratyush@kernel.org>\nReviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>\nCc: Christian Brauner <brauner@kernel.org>\nCc: guoweikang <guoweikang.kernel@gmail.com>\nCc: Hugh Dickins <hughd@google.com>\nCc: Kairui Song <kasong@tencent.com>\nCc: Kemeng Shi <shikemeng@huaweicloud.com>\nCc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "2214ec4bf89d0fd27717322d3983a2f3b469c7f3",
+    "author": "dmantipov",
+    "date": "2025-12-05T06:51:59+00:00",
+    "message": "ocfs2: fix memory leak in ocfs2_merge_rec_left()\n\nIn 'ocfs2_merge_rec_left()', do not reset 'left_path' to NULL after\nmove, thus allowing 'ocfs2_free_path()' to free it before return.\n\nLink: https://lkml.kernel.org/r/20251205065159.392749-1-dmantipov@yandex.ru\nFixes: 677b975282e4 (\"ocfs2: Add support for cross extent block\")\nSigned-off-by: Dmitry Antipov <dmantipov@yandex.ru>\nReported-by: syzbot+cfc7cab3bb6eaa7c4de2@syzkaller.appspotmail.com\nCloses: https://syzkaller.appspot.com/bug?extid=cfc7cab3bb6eaa7c4de2\nReviewed-by: Heming Zhao <heming.zhao@suse.com>\nAcked-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "7efb45f9685fd9292413f15ea1212f7077c4a35f",
+    "author": "eraykaradag",
+    "date": "2025-12-02T22:45:08+00:00",
+    "message": "ocfs2: invalidate inode if i_mode is zero after block read\n\nA panic occurs in ocfs2_unlink due to WARN_ON(inode->i_nlink == 0) when\nhandling a corrupted inode with i_mode=0 and i_nlink=0 in memory.\n\nThis \"zombie\" inode is created because ocfs2_read_locked_inode proceeds\neven after ocfs2_validate_inode_block successfully validates a block that\nstructurally looks okay (passes checksum, signature etc.) but contains\nsemantically invalid data (specifically i_mode=0).  The current validation\nfunction doesn't check for i_mode being zero.\n\nThis results in an in-memory inode with i_mode=0 being added to the VFS\ncache, which later triggers the panic during unlink.\n\nPrevent this by adding an explicit check for (i_mode == 0, i_nlink == 0,\nnon-orphan) within ocfs2_validate_inode_block.  If the check is true,\nreturn -EFSCORRUPTED to signal corruption.  This causes the caller\n(ocfs2_read_locked_inode) to invoke make_bad_inode(), correctly preventing\nthe zombie inode from entering the cache.\n\nLink: https://lkml.kernel.org/r/20251202224507.53452-2-eraykrdg1@gmail.com\nCo-developed-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Ahmet Eray Karadag <eraykrdg1@gmail.com>\nReported-by: syzbot+55c40ae8a0e5f3659f2b@syzkaller.appspotmail.com\nFixes: https://syzkaller.appspot.com/bug?extid=55c40ae8a0e5f3659f2b\nLink: https://lore.kernel.org/all/20251022222752.46758-2-eraykrdg1@gmail.com/T/\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: David Hunter <david.hunter.linux@gmail.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nCc: Heming Zhao <heming.zhao@suse.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "76b9701a54a23fe45dc15aacace616cca9671823",
+    "author": "GustavoARSilva",
+    "date": "2025-11-11T03:01:19+00:00",
+    "message": "ocfs2: avoid -Wflex-array-member-not-at-end warning\n\n-Wflex-array-member-not-at-end was introduced in GCC-14, and we are\ngetting ready to enable it, globally.\n\nUse the new TRAILING_OVERLAP() helper to fix the following warning:\n\nfs/ocfs2/xattr.c:52:41: warning: structure containing a flexible array member is not at the end of another structure [-Wflex-array-member-not-at-end]\n\nThis helper creates a union between a flexible-array member (FAM) and a\nset of MEMBERS that would otherwise follow it.\n\nThis overlays the trailing MEMBER struct ocfs2_extent_rec er; onto the FAM\nstruct ocfs2_xattr_value_root::xr_list.l_recs[], while keeping the FAM and\nthe start of MEMBER aligned.\n\nThe static_assert() ensures this alignment remains, and it's intentionally\nplaced inmediately after the related structure --no blank line in between.\n\nLink: https://lkml.kernel.org/r/aRKm_7aN7Smc3J5L@kspp\nSigned-off-by: Gustavo A. R. Silva <gustavoars@kernel.org>\nReviewed-by: Heming Zhao <heming.zhao@suse.com>\nAcked-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "7eff54dfd245fb4bf398334be663478b9ae4bb99",
+    "author": "eraykaradag",
+    "date": "2025-12-03T03:34:26+00:00",
+    "message": "ocfs2: convert remaining read-only checks to ocfs2_emergency_state\n\nNow that the centralized `ocfs2_emergency_state()` helper is available,\nrefactor remaining filesystem-wide checks for `ocfs2_is_soft_readonly` and\n`ocfs2_is_hard_readonly` to use this new function.\n\nTo ensure strict consistency with the previous behavior and guarantee no\nfunctional changes, the call sites continue to explicitly return -EROFS\nwhen the emergency state is detected.  This standardizes the check logic\nwhile preserving the existing error handling flow.\n\nLink: https://lkml.kernel.org/r/3421641b54ad6b6e4ffca052351b518eacc1bd08.1764728893.git.eraykrdg1@gmail.com\nCo-developed-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Ahmet Eray Karadag <eraykrdg1@gmail.com>\nReviewed-by: Heming Zhao <heming.zhao@suse.com>\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: David Hunter <david.hunter.linux@gmail.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Jun Piao <piaojun@huawei.com>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Mark Fasheh <mark@fasheh.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "752ba0976b25d69cfac55137573298bd5dd88aa2",
+    "author": "eraykaradag",
+    "date": "2025-12-03T03:34:25+00:00",
+    "message": "ocfs2: add ocfs2_emergency_state helper and apply to setattr\n\nPatch series \"ocfs2: Refactor read-only checks to use\nocfs2_emergency_state\", v4.\n\nFollowing the fix for the `make_bad_inode` validation failure (syzbot ID:\nb93b65ee321c97861072), this separate series introduces a new helper\nfunction, `ocfs2_emergency_state()`, to improve and centralize read-only\nand error state checking.\n\nThis is modeled after the `ext4_emergency_state()` pattern, providing a\nsingle, unified location for checking all filesystem-level emergency\nconditions.  This makes the code cleaner and ensures that any future\nchecks (e.g., for fatal error states) can be added in one place.\n\nThis series is structured as follows:\n\n1.  The first patch introduces the `ocfs2_emergency_state()` helper\n    (currently checking for -EROFS) and applies it to `ocfs2_setattr`\n    to provide a \"fail-fast\" mechanism, as suggested by Albin\n    Babu Varghese.\n2.  The second patch completes the refactoring by converting all\n    remaining read-only checks throughout OCFS2 to use this new helper.\n\n\nThis patch (of 2):\n\nTo centralize error checking, follow the pattern of other filesystems like\next4 (which uses `ext4_emergency_state()`), and prepare for future\nenhancements, this patch introduces a new helper function:\n`ocfs2_emergency_state()`.\n\nThe purpose of this helper is to provide a single, unified location for\nchecking all filesystem-level emergency conditions.  In this initial\nimplementation, the function only checks for the existing hard and soft\nread-only modes, returning -EROFS if either is set.\n\nThis provides a foundation where future checks (e.g., for fatal error\nstates returning -EIO, or shutdown states) can be easily added in one\nplace.\n\nThis patch also adds this new check to the beginning of `ocfs2_setattr()`.\nThis ensures that operations like `ftruncate` (which triggered the\noriginal BUG) fail-fast with -EROFS when the filesystem is already in a\nread-only state.\n\nLink: https://lkml.kernel.org/r/cover.1764728893.git.eraykrdg1@gmail.com\nLink: https://lkml.kernel.org/r/e9e975bcaaff8dbc155b70fbc1b2798a2e36e96f.1764728893.git.eraykrdg1@gmail.com\nCo-developed-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Albin Babu Varghese <albinbabuvarghese20@gmail.com>\nSigned-off-by: Ahmet Eray Karadag <eraykrdg1@gmail.com>\nSuggested-by: Heming Zhao <heming.zhao@suse.com>\nReviewed-by: Heming Zhao <heming.zhao@suse.com>\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nCc: David Hunter <david.hunter.linux@gmail.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "01da5216c572f6f8fca4e272451aad6c273b0d57",
+    "author": "aheev",
+    "date": "2025-12-03T15:28:49+00:00",
+    "message": "checkpatch: add uninitialized pointer with __free attribute check\n\nUinitialized pointers with __free attribute can cause undefined behavior\nas the memory randomly assigned to the pointer is freed automatically when\nthe pointer goes out of scope.  add check in checkpatch to detect such\nissues.\n\nLink: https://lkml.kernel.org/r/20251203-aheev-checkpatch-uninitialized-free-v7-1-841e3b31d8f3@gmail.com\nSigned-off-by: Ally Heev <allyheev@gmail.com>\nSuggested-by: Dan Carpenter <dan.carpenter@linaro.org>\nLink: https://lore.kernel.org/all/8a4c0b43-cf63-400d-b33d-d9c447b7e0b9@suswa.mountain/\nLink: https://lore.kernel.org/all/58fd478f408a34b578ee8d949c5c4b4da4d4f41d.camel@HansenPartnership.com/\nAcked-by: Dan Williams <dan.j.williams@intel.com>\nReviewed-by: Krzysztof Kozlowski <krzk@kernel.org>\nAcked-by: Joe Perches <joe@perches.com>\nCc: Andy Whitcroft <apw@canonical.com>\nCc: David Hunter <david.hunter.linux@gmail.com>\nCc: Dwaipayan Ray <dwaipayanray1@gmail.com>\nCc: Geert Uytterhoeven <geert@linux-m68k.org>\nCc: James Bottomley <james.bottomley@HansenPartnership.com>\nCc: Jonathan Corbet <corbet@lwn.net>\nCc: Lukas Bulwahn <lukas.bulwahn@gmail.com>\nCc: Menon, Nishanth <nm@ti.com>\nCc: Stephen Boyd <sboyd@kernel.org>\nCc: Viresh Kumar <vireshk@kernel.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "e6b4d264c8c883d8451c7b5f20cd96ddf94af3ef",
+    "author": "andy-shev",
+    "date": "2025-12-01T20:10:18+00:00",
+    "message": "args: fix documentation to reflect the correct numbers\n\nThe macro uses up to 15 arguments.  Reflect this in the top level comment.\n\nLink: https://lkml.kernel.org/r/20251201201018.765475-1-andriy.shevchenko@linux.intel.com\nFixes: d51e783c17ba (\"lsm: count the LSMs enabled at compile time\")\nSigned-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>\nReviewed-by: Randy Dunlap <rdunlap@infradead.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "039bef30e320827bac8990c9f29d2a68cd8adb5f",
+    "author": "rkt-1597",
+    "date": "2025-12-01T13:07:11+00:00",
+    "message": "ocfs2: fix kernel BUG in ocfs2_find_victim_chain\n\nsyzbot reported a kernel BUG in ocfs2_find_victim_chain() because the\n`cl_next_free_rec` field of the allocation chain list (next free slot in\nthe chain list) is 0, triggring the BUG_ON(!cl->cl_next_free_rec)\ncondition in ocfs2_find_victim_chain() and panicking the kernel.\n\nTo fix this, an if condition is introduced in ocfs2_claim_suballoc_bits(),\njust before calling ocfs2_find_victim_chain(), the code block in it being\nexecuted when either of the following conditions is true:\n\n1. `cl_next_free_rec` is equal to 0, indicating that there are no free\nchains in the allocation chain list\n2. `cl_next_free_rec` is greater than `cl_count` (the total number of\nchains in the allocation chain list)\n\nEither of them being true is indicative of the fact that there are no\nchains left for usage.\n\nThis is addressed using ocfs2_error(), which prints\nthe error log for debugging purposes, rather than panicking the kernel.\n\nLink: https://lkml.kernel.org/r/20251201130711.143900-1-activprithvi@gmail.com\nSigned-off-by: Prithvi Tambewagh <activprithvi@gmail.com>\nReported-by: syzbot+96d38c6e1655c1420a72@syzkaller.appspotmail.com\nCloses: https://syzkaller.appspot.com/bug?extid=96d38c6e1655c1420a72\nTested-by: syzbot+96d38c6e1655c1420a72@syzkaller.appspotmail.com\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nCc: Heming Zhao <heming.zhao@suse.com>\nCc: <stable@vger.kernel.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "bf2c7bf5c48303b76f20537238292571e6aa29f3",
+    "author": "soleen",
+    "date": "2025-11-30T01:09:19+00:00",
+    "message": "liveupdate: luo_core: fix redundant bound check in luo_ioctl()\n\nThe kernel test robot reported a Smatch warning:\nkernel/liveupdate/luo_core.c:402 luo_ioctl() warn: unsigned 'nr' is\nnever less than zero.\n\nThis occurs because 'nr' is unsigned and LIVEUPDATE_CMD_BASE is currently\ndefined as 0, making the check (nr < LIVEUPDATE_CMD_BASE) always false.\n\nRemove the explicit lower bound check.  The logic remains correct because\n'nr' is unsigned; if nr is less than LIVEUPDATE_CMD_BASE, the expression\n(nr - LIVEUPDATE_CMD_BASE) will wrap around to a large positive value. \nThis will inevitably be larger than ARRAY_SIZE(luo_ioctl_ops) and be\ncaught by the upper bound check.\n\nLink: https://lkml.kernel.org/r/20251130010919.1488230-1-pasha.tatashin@soleen.com\nSigned-off-by: Pasha Tatashin <pasha.tatashin@soleen.com>\nReported-by: kernel test robot <lkp@intel.com>\nCloses: https://lore.kernel.org/oe-kbuild-all/202511280300.6pvBmXUS-lkp@intel.com/\nReviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>\nCc: David Matlack <dmatlack@google.com>\nCc: Pratyush Yadav <pratyush@kernel.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "2a4f33430e96d0bebfa37b1d586098f61f030b06",
+    "author": "deepanshu406",
+    "date": "2025-11-20T04:11:45+00:00",
+    "message": "ocfs2: validate inline xattr size and entry count in ocfs2_xattr_ibody_list\n\nAdd comprehensive validation of inline xattr metadata in\nocfs2_xattr_ibody_list() to prevent out-of-bounds access and\nuse-after-free bugs when processing corrupted inline xattrs.\n\nThe patch adds two critical validations:\n\n1. Validates i_xattr_inline_size before use:\n   - Ensures it does not exceed block size\n   - Ensures it is at least large enough for xattr header\n   - Prevents pointer arithmetic with corrupted size values that could\n     point outside the inode block\n\n2. Validates xattr entry count (xh_count):\n   - Calculates maximum entries that can fit in the inline space\n   - Rejects counts that exceed this limit\n   - Prevents out-of-bounds array access in subsequent code\n\nWithout these checks, a corrupted filesystem with invalid inline xattr\nmetadata can cause the code to access memory beyond the allocated space.\nFor example:\n- A corrupted i_xattr_inline_size of 0 would cause header pointer\n  calculation to point past the end of the block\n- A corrupted xh_count of 22 with inline_size of 256 would cause\n  array access 7 entries beyond the 15 that actually fit (the syzbot\n  reproducer used xh_count of 20041), leading to use-after-free when\n  accessing freed memory pages\n\nThe validation uses the correct inline_size (from di->i_xattr_inline_size)\nrather than block size, ensuring accurate bounds checking for inline\nxattrs specifically.\n\nLink: https://lkml.kernel.org/r/20251120041145.33176-1-kartikey406@gmail.com\nLink: https://lore.kernel.org/all/20251111073831.2027072-1-kartikey406@gmail.com/ [v1]\nLink: https://lore.kernel.org/all/20251117063217.5690-1-kartikey406@gmail.com/ [v2]\nLink: https://lore.kernel.org/all/20251117114224.12948-1-kartikey406@gmail.com/ [v3]\nSigned-off-by: Deepanshu Kartikey <kartikey406@gmail.com>\nReported-by: syzbot+ab0ad25088673470d2d9@syzkaller.appspotmail.com\nCloses: https://syzkaller.appspot.com/bug?extid=ab0ad25088673470d2d9\nTested-by: syzbot+ab0ad25088673470d2d9@syzkaller.appspotmail.com\nSuggested-by: Heming Zhao <heming.zhao@suse.com>\nReviewed-by: Heming Zhao <heming.zhao@suse.com>\nAcked-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "acce46aaf8c65612b2933e739b3a929986b5642b",
+    "author": "lalitshankarch",
+    "date": "2025-11-27T17:54:31+00:00",
+    "message": "fs/fat: remove unnecessary wrapper fat_max_cache()\n\nfat_max_cache() always returned FAT_MAX_CACHE and did not use the inode\nparameter. So, use the FAT_MAX_CACHE constant directly.\n\nLink: https://lkml.kernel.org/r/20251127175431.126516-1-lalitshankarch@gmail.com\nSigned-off-by: Lalit Shankar Chowdhury <lalitshankarch@gmail.com>\nAcked-by: OGAWA Hirofumi <hirofumi@mail.parknet.co.jp>\nCc: Christian Brauner <brauner@kernel.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "d86fea4294cb7878e3866eb567ee803d180a159b",
+    "author": "toblux",
+    "date": "2025-11-26T11:44:15+00:00",
+    "message": "ocfs2: replace deprecated strcpy with strscpy\n\nstrcpy() has been deprecated [1] because it performs no bounds checking on\nthe destination buffer, which can lead to buffer overflows.  Replace it\nwith the safer strscpy().  No functional changes.\n\nLink: https://www.kernel.org/doc/html/latest/process/deprecated.html#strcpy [1]\nLink: https://lkml.kernel.org/r/20251126114419.92539-1-thorsten.blum@linux.dev\nSigned-off-by: Thorsten Blum <thorsten.blum@linux.dev>\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "4ac577ae741e745ecfb64c5a9c7f52fc36aca022",
+    "author": "ea1davis",
+    "date": "2025-11-27T03:26:40+00:00",
+    "message": "ocfs2: check tl_used after reading it from trancate log inode\n\nThe fuzz image has a truncate log inode whose tl_used is bigger than\ntl_count so it triggers the BUG in ocfs2_truncate_log_needs_flush() [1].\n\nAs what the check in ocfs2_truncate_log_needs_flush() does, just do same\ncheck into ocfs2_get_truncate_log_info() when truncate log inode is\nreading in so we can bail out earlier.\n\n[1]\n(syz.0.17,5491,0):ocfs2_truncate_log_needs_flush:5830 ERROR: bug expression: le16_to_cpu(tl->tl_used) > le16_to_cpu(tl->tl_count)\nkernel BUG at fs/ocfs2/alloc.c:5830!\nRIP: 0010:ocfs2_truncate_log_needs_flush fs/ocfs2/alloc.c:5827 [inline]\nCall Trace:\n ocfs2_commit_truncate+0xb64/0x21d0 fs/ocfs2/alloc.c:7372\n ocfs2_truncate_file+0xca2/0x1420 fs/ocfs2/file.c:509\n ocfs2_setattr+0x1520/0x1b40 fs/ocfs2/file.c:1212\n notify_change+0xc1a/0xf40 fs/attr.c:546\n do_truncate+0x1a4/0x220 fs/open.c:68\n\nLink: https://lkml.kernel.org/r/tencent_B24B1C1BE225DCBA44BB6933AB9E1B1B0708@qq.com\nReported-by: syzbot+f82afc4d4e74d0ef7a89@syzkaller.appspotmail.com\nCloses: https://syzkaller.appspot.com/bug?extid=f82afc4d4e74d0ef7a89\nTested-by: syzbot+f82afc4d4e74d0ef7a89@syzkaller.appspotmail.com\nSigned-off-by: Edward Adam Davis <eadavis@qq.com>\nReviewed-by: Joseph Qi <joseph.qi@linux.alibaba.com>\nCc: Mark Fasheh <mark@fasheh.com>\nCc: Joel Becker <jlbec@evilplan.org>\nCc: Junxiao Bi <junxiao.bi@oracle.com>\nCc: Changwei Ge <gechangwei@live.cn>\nCc: Jun Piao <piaojun@huawei.com>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "b2135d1cb0e368dcdb8631ed2f232caefbd7711f",
+    "author": null,
+    "date": "2025-11-28T07:17:07+00:00",
+    "message": "liveupdate: luo_file: don't use invalid list iterator\n\nIf we exit a list_for_each_entry() without hitting a break then the list\niterator points to an offset from the list_head.  It's a non-NULL but\ninvalid pointer and dereferencing it isn't allowed.\n\nIntroduce a new \"found\" variable to test instead.\n\nLink: https://lkml.kernel.org/r/aSlMc4SS09Re4_xn@stanley.mountain\nFixes: 3ee1d673194e (\"liveupdate: luo_file: implement file systems callbacks\")\nSigned-off-by: Dan Carpenter <dan.carpenter@linaro.org>\nReported-by: kernel test robot <lkp@intel.com>\nCloses: https://lore.kernel.org/r/202511280420.y9O4fyhX-lkp@intel.com/\nReviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>\nReviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>\nCc: Pratyush Yadav <pratyush@kernel.org>\nSigned-off-by: Andrew Morton <akpm@linux-foundation.org>"
+  },
+  {
+    "sha": "1de741159bbb187c8018c4c779acde4ea0188478",
+    "author": "torvalds",
+    "date": "2025-12-10T23:54:08+00:00",
+    "message": "Merge tag 'slab-for-6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/vbabka/slab\n\nPull slab fix from Vlastimil Babka:\n\n - A stable fix for performance regression in tests that perform\n   kmem_cache_destroy() a lot, due to unnecessarily wide scope of\n   kvfree_rcu_barrier() (Harry Yoo)\n\n* tag 'slab-for-6.19-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/vbabka/slab:\n  mm/slab: introduce kvfree_rcu_barrier_on_cache() for cache destruction"
+  },
+  {
+    "sha": "0723a166d1f1da4c60d7b11289383f073e4dee9b",
+    "author": "torvalds",
+    "date": "2025-12-10T23:19:46+00:00",
+    "message": "Merge tag 's390-6.19-2' of git://git.kernel.org/pub/scm/linux/kernel/git/s390/linux\n\nPull more s390 updates from Heiko Carstens:\n\n - Use the MSI parent domain API instead of the legacy API for setup and\n   teardown of PCI MSI IRQs\n\n - Select POSIX_CPU_TIMERS_TASK_WORK now that VIRT_XFER_TO_GUEST_WORK\n   has been implemented for s390\n\n - Fix a KVM bug which can lead to guest memory corruption\n\n - Fix KASAN shadow memory mapping for hotplugged memory\n\n - Minor bug fixes and improvements\n\n* tag 's390-6.19-2' of git://git.kernel.org/pub/scm/linux/kernel/git/s390/linux:\n  s390/bug: Add missing alignment\n  s390/bug: Add missing CONFIG_BUG ifdef again\n  KVM: s390: Fix gmap_helper_zap_one_page() again\n  s390/pci: Migrate s390 IRQ logic to IRQ domain API\n  genirq: Change hwirq parameter to irq_hw_number_t\n  s390: Select POSIX_CPU_TIMERS_TASK_WORK\n  s390: Unmap early KASAN shadow on memory offlining\n  s390/vmem: Support 2G page splitting for KASAN shadow freeing\n  s390/boot: Use entire page for PTEs\n  s390/vmur: Use scnprintf() instead of sprintf()"
+  },
+  {
+    "sha": "840b22edd5adf9dda46f4e701815eadce8f2f3eb",
+    "author": "torvalds",
+    "date": "2025-12-10T23:14:23+00:00",
+    "message": "Merge tag 'dma-mapping-6.19-2025-12-10' of git://git.kernel.org/pub/scm/linux/kernel/git/mszyprowski/linux\n\nPull dma-mapping fixes from Marek Szyprowski:\n\n - last minute fix for missing parenthesis in recently merged code (Hans\n   de Goede)\n\n - removal of excessive, non-fatal warnings (Dave Kleikamp)\n\n* tag 'dma-mapping-6.19-2025-12-10' of git://git.kernel.org/pub/scm/linux/kernel/git/mszyprowski/linux:\n  dma-mapping: Fix DMA_BIT_MASK() macro being broken\n  dma/pool: eliminate alloc_pages warning in atomic_pool_expand"
+  },
+  {
+    "sha": "72e24456a54fe04710d89626cc5a88703e2f6202",
+    "author": "superm1",
+    "date": "2025-12-09T17:14:47+00:00",
+    "message": "Revert \"drm/amd/display: Fix pbn to kbps Conversion\"\n\nDeeply daisy chained DP/MST displays are no longer able to light\nup. This reverts commit e0dec00f3d05 (\"drm/amd/display: Fix pbn\nto kbps Conversion\")\n\nCc: Jerry Zuo <jerry.zuo@amd.com>\nReported-by: nat@nullable.se\nCloses: https://gitlab.freedesktop.org/drm/amd/-/issues/4756\nSigned-off-by: Mario Limonciello <mario.limonciello@amd.com>\nAcked-by: Alex Deucher <alexander.deucher@amd.com>\nSigned-off-by: Alex Deucher <alexander.deucher@amd.com>\n(cherry picked from commit e1c94109c76e8a77a21531bd53f6c63356c81158)\nCc: stable@vger.kernel.org # 6.17+"
+  },
+  {
+    "sha": "93a01629c8bfd30906c76921ec986802d76920c6",
+    "author": "superm1",
+    "date": "2025-12-09T04:46:46+00:00",
+    "message": "drm/amd: Fix unbind/rebind for VCN 4.0.5\n\nUnbinding amdgpu has no problems, but binding it again leads to an\nerror of sysfs file already existing.  This is because it wasn't\nactually cleaned up on unbind.  Add the missing cleanup step.\n\nFixes: 547aad32edac (\"drm/amdgpu: add VCN4 ip block support\")\nSigned-off-by: Mario Limonciello (AMD) <superm1@kernel.org>\nReviewed-by: Alex Deucher <alexander.deucher@amd.com>\nSigned-off-by: Alex Deucher <alexander.deucher@amd.com>\n(cherry picked from commit d717e62e9b6ccff0e3cec78a58dfbd00858448b3)\nCc: stable@vger.kernel.org"
+  },
+  {
+    "sha": "5c179cac051943f673c8baa53214e2566bfe69dc",
+    "author": "torvalds",
+    "date": "2025-12-10T23:01:52+00:00",
+    "message": "Merge tag 'alpha-for-v6.19-tag' of git://git.kernel.org/pub/scm/linux/kernel/git/lindholm/alpha\n\nPull alpha updates from Magnus Lindholm:\n \"Two small uapi fixes. One patch hardcodes TC* ioctl values that\n  previously depended on the deprecated termio struct, avoiding build\n  issues with newer glibc versions. The other patch switches uapi\n  headers to use the compiler-defined __ASSEMBLER__ macro for better\n  consistency between kernel and userspace.\n\n    - don't reference obsolete termio struct for TC* constants\n\n    - Replace __ASSEMBLY__ with __ASSEMBLER__ in the alpha headers\"\n\n* tag 'alpha-for-v6.19-tag' of git://git.kernel.org/pub/scm/linux/kernel/git/lindholm/alpha:\n  alpha: don't reference obsolete termio struct for TC* constants\n  alpha: Replace __ASSEMBLY__ with __ASSEMBLER__ in the alpha headers"
+  },
+  {
+    "sha": "29ba26af9a9d43d5dbb8aa8e653adeb159d42587",
+    "author": "torvalds",
+    "date": "2025-12-10T22:50:48+00:00",
+    "message": "Merge tag 'for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/rmk/linux\n\nPull ARM updates from Russell King:\n\n - disable jump label and high PTE for PREEMPT RT kernels\n\n - fix input operand modification in load_unaligned_zeropad()\n\n - fix hash_name() / fault path induced warnings\n\n - fix branch predictor hardening\n\n* tag 'for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/rmk/linux:\n  ARM: fix branch predictor hardening\n  ARM: fix hash_name() fault\n  ARM: allow __do_kernel_fault() to report execution of memory faults\n  ARM: group is_permission_fault() with is_translation_fault()\n  ARM: 9464/1: fix input-only operand modification in load_unaligned_zeropad()\n  ARM: 9461/1: Disable HIGHPTE on PREEMPT_RT kernels\n  ARM: 9459/1: Disable jump-label on PREEMPT_RT"
+  },
+  {
+    "sha": "a0750fae73c55112ea11a4867bee40f11e679405",
+    "author": "keithbusch",
+    "date": "2025-12-10T10:43:46+00:00",
+    "message": "blk-mq-dma: always initialize dma state\n\nEnsure the dma state is initialized when we're not using the contiguous\niova, otherwise the caller may be using a stale state from a previous\nrequest that could use the coalesed iova allocation.\n\nFixes: 2f6b2565d43cdb5 (\"block: accumulate memory segment gaps per bio\")\nReported-by: Sebastian Ott <sebott@redhat.com>\nTested-by: Sebastian Ott <sebott@redhat.com>\nSigned-off-by: Keith Busch <kbusch@kernel.org>\nReviewed-by: Christoph Hellwig <hch@lst.de>\nSigned-off-by: Jens Axboe <axboe@kernel.dk>"
+  },
+  {
+    "sha": "13ea55ea20176736516b20b9ea2d8cf97dbe74f5",
+    "author": "FirstLoveLife",
+    "date": "2025-12-05T05:46:20+00:00",
+    "message": "dm pcache: fix segment info indexing\n\nSegment info indexing also used sizeof(struct) instead of the\n4K metadata stride, so info_index could point between slots and\nsubsequent writes would advance incorrectly. Derive info_index\nfrom the pointer returned by the segment meta search using\nPCACHE_SEG_INFO_SIZE and advance to the next slot for future\nupdates.\n\nSigned-off-by: Li Chen <chenl311@chinatelecom.cn>\nSigned-off-by: Dongsheng Yang <dongsheng.yang@linux.dev>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReviewed-by: Zheng Gu <cengku@gmail.com>\nCc: stable@vger.kernel.org\t# 6.18"
+  },
+  {
+    "sha": "ee7633178321f5d983db3adfdea9322456cfdaaa",
+    "author": "FirstLoveLife",
+    "date": "2025-12-05T05:46:19+00:00",
+    "message": "dm pcache: fix cache info indexing\n\nThe on-media cache_info index used sizeof(struct) instead of the\n4K metadata stride, so gc_percent updates from dmsetup message\nwere written between slots and lost after reboot. Use\nPCACHE_CACHE_INFO_SIZE in get_cache_info_addr() and align\ninfo_index with the slot returned by pcache_meta_find_latest().\n\nSigned-off-by: Li Chen <chenl311@chinatelecom.cn>\nSigned-off-by: Dongsheng Yang <dongsheng.yang@linux.dev>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReviewed-by: Zheng Gu <cengku@gmail.com>\nCc: stable@vger.kernel.org\t# 6.18"
+  },
+  {
+    "sha": "ebbb90344a7da2421e4b54668b94e81828b8b308",
+    "author": "yangdongsheng",
+    "date": "2025-12-05T05:46:18+00:00",
+    "message": "dm-pcache: advance slot index before writing slot\n\nIn dm-pcache, in order to ensure crash-consistency, a dual-copy scheme\nis used to alternately update metadata, and there is a slot index that\nrecords the current slot. However, in the write path the current\nimplementation writes directly to the current slot indexed by slot\nindex, and then advances the slot — which ends up overwriting the\nexisting slot, violating the crash-consistency guarantee.\n\nThis patch fixes that behavior, preventing metadata from being\noverwritten incorrectly.\n\nIn addition, this patch add a missing pmem_wmb() after memcpy_flushcache().\n\nSigned-off-by: Dongsheng Yang <dongsheng.yang@linux.dev>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReviewed-by: Zheng Gu <cengku@gmail.com>\nCc: stable@vger.kernel.org\t# 6.18"
+  },
+  {
+    "sha": "7799eaecfeb756664be37c079520af67d5d64f70",
+    "author": "mauelsha",
+    "date": "2025-12-03T16:19:42+00:00",
+    "message": "dm raid: add documentation for takeover/reshape raid1 -> raid5 table line examples\n\nAlso enhance possible takeover/reshape information and do some reformatting.\n\nSigned-off-by: Heinz Mauelshagen <heinzm@redhat.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "ab08f9c8b363297cafaf45475b08f78bf19b88ef",
+    "author": "ISCAS-Vulab",
+    "date": "2025-12-01T07:41:03+00:00",
+    "message": "dm log-writes: Add missing set_freezable() for freezable kthread\n\nThe log_writes_kthread() calls try_to_freeze() but lacks set_freezable(),\nrendering the freeze attempt ineffective since kernel threads are\nnon-freezable by default. This prevents proper thread suspension during\nsystem suspend/hibernate.\n\nAdd set_freezable() to explicitly mark the thread as freezable.\n\nFixes: 0e9cebe72459 (\"dm: add log writes target\")\nSigned-off-by: Haotian Zhang <vulab@iscas.ac.cn>\nReviewed-by: Benjamin Marzinski <bmarzins@redhat.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "2f6cfd6d7cb165a7af8877b838a9f6aab4159324",
+    "author": "jtstrs",
+    "date": "2025-12-02T17:18:38+00:00",
+    "message": "dm-raid: fix possible NULL dereference with undefined raid type\n\nrs->raid_type is assigned from get_raid_type_by_ll(), which may return\nNULL. This NULL value could be dereferenced later in the condition\n'if (!(rs_is_raid10(rs) && rt_is_raid0(rs->raid_type)))'.\n\nAdd a fail-fast check to return early with an error if raid_type is NULL,\nsimilar to other uses of this function.\n\nFound by Linux Verification Center (linuxtesting.org) with Svace.\n\nFixes: 33e53f06850f (\"dm raid: introduce extended superblock and new raid types to support takeover/reshaping\")\nSigned-off-by: Alexey Simakov <bigalex934@gmail.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "8581b19eb2c5ccf06c195d3b5468c3c9d17a5020",
+    "author": null,
+    "date": "2025-12-01T21:13:10+00:00",
+    "message": "dm-snapshot: fix 'scheduling while atomic' on real-time kernels\n\nThere is reported 'scheduling while atomic' bug when using dm-snapshot on\nreal-time kernels. The reason for the bug is that the hlist_bl code does\npreempt_disable() when taking the lock and the kernel attempts to take\nother spinlocks while holding the hlist_bl lock.\n\nFix this by converting a hlist_bl spinlock into a regular spinlock.\n\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReported-by: Jiping Ma <jiping.ma2@windriver.com>"
+  },
+  {
+    "sha": "f4412c7d5a5ab34a6338e15d07fba25185fbb94c",
+    "author": "ChaitanayaKulkarni",
+    "date": "2025-11-24T23:48:03+00:00",
+    "message": "dm: ignore discard return value\n\n__blkdev_issue_discard() always returns 0, making all error checking\nat call sites dead code.\n\nFor dm-thin change issue_discard() return type to void, in\npassdown_double_checking_shared_status() remove the r assignment from\nreturn value of the issue_discard(), for end_discard() hardcode value of\nr to 0 that matches only value returned from __blkdev_issue_discard().\n\nReviewed-by: Martin K. Petersen <martin.petersen@oracle.com>\nReviewed-by: Johannes Thumshirn <johannes.thumshirn@wdc.com>\nReviewed-by: Christoph Hellwig <hch@lst.de>\nSigned-off-by: Chaitanya Kulkarni <ckulkarnilinux@gmail.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "20f85a1b1a8f3f5f2a7a215c9cf501ed9093a03a",
+    "author": null,
+    "date": "2025-11-26T15:27:13+00:00",
+    "message": "MAINTAINERS: add Benjamin Marzinski as a device mapper maintainer\n\nBen will be working with me as a maintainer, so add him to the\nMAINTAINERS file.\n\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nAcked-by: Mike Snitzer <snitzer@kernel.org>"
+  },
+  {
+    "sha": "27f204c215a0f5d91a963a16adb10432fa4ca0e9",
+    "author": "bmarzins",
+    "date": "2025-11-21T23:49:52+00:00",
+    "message": "dm-mpath: Simplify the setup_scsi_dh code\n\nThere's no point to the MPATHF_RETAIN_ATTACHED_HW_HANDLER flag any more.\nThe way setup_scsi_dh() worked, if that flag wasn't set, it would\nattempt to attach any passed in hardware handler. This would always fail\nif a different hardware handler was attached, which caused\nsetup_scsi_dh() to rerun as if the flag was set. So the code would\nalready retain any attached handler, because attaching a different one\nwould always fail.\n\nAlso, the code had a bug. If attached_handler_name was NULL but there\nwas a scsi device handler attached (because either\nscsi_dh_attached_handler_name failed() to allocate a name, a handler got\nattached after it was called) the code would loop endlessly.\n\nInstead, ignore MPATHF_RETAIN_ATTACHED_HW_HANDLER, and always free the\npassed in handler if *attached_handler_name is set. This simplifies the\ncode, and avoids the endless loop bug, while keeping the functionality\nthe same.\n\nSigned-off-by: Benjamin Marzinski <bmarzins@redhat.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "4efe85b0c442a47d8063fdc8ce5f31e9b33f046d",
+    "author": "lorelei-sakai",
+    "date": "2025-11-21T22:51:04+00:00",
+    "message": "dm vdo: fix kerneldoc warnings\n\nFix kerneldoc warnings across the dm-vdo target. Also\nremove some unhelpful or inaccurate doc comments, and fix\nsome format inconsistencies that did not produce warnings.\n\nNo functional changes.\n\nSuggested-by: Sunday Adelodun <adelodunolaoluwa@yahoo.com>\nSigned-off-by: Matthew Sakai <msakai@redhat.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>"
+  },
+  {
+    "sha": "d0ac06ae53be0cdb61f5fe6b62d25d3317c51657",
+    "author": null,
+    "date": "2025-10-20T12:48:13+00:00",
+    "message": "dm-bufio: align write boundary on physical block size\n\nThere may be devices with physical block size larger than 4k.\n\nIf dm-bufio sends I/O that is not aligned on physical block size,\nperformance is degraded.\n\nThe 4k minimum alignment limit is there because some SSDs report logical\nand physical block size 512 despite having 4k internally - so dm-bufio\nshouldn't send I/Os not aligned on 4k boundary, because they perform\nbadly (the SSD does read-modify-write for them).\n\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReported-by: Uladzislau Rezki (Sony) <urezki@gmail.com>\nCc: stable@vger.kernel.org"
+  },
+  {
+    "sha": "ce51c6963a91cc6d5c9cf6c3735991882f72587d",
+    "author": null,
+    "date": "2025-11-05T15:02:36+00:00",
+    "message": "dm-crypt: enable DM_TARGET_ATOMIC_WRITES\n\nAllow handling of bios with REQ_ATOMIC flag set.\n\nDon't split these bios and fail them if they overrun the hard limit\n\"BIO_MAX_VECS << PAGE_SHIFT\".\n\nIn order to simplify the code, this commit joins the logic that avoids\nsplitting emulated zone append bios with the logic that avoids\nsplitting atomic write bios.\n\nSigned-off-by: John Garry <john.g.garry@oracle.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nTested-by: John Garry <john.g.garry@oracle.com>"
+  },
+  {
+    "sha": "de67c139b3846ece6b8bbb62abf1f010ae85c083",
+    "author": null,
+    "date": "2025-11-05T15:01:33+00:00",
+    "message": "dm: test for REQ_ATOMIC in dm_accept_partial_bio()\n\nAny bio with REQ_ATOMIC flag set should never be split or partially\ncompleted, so BUG_ON() on this scenario in dm_accept_partial_bio() (whose\nintent is to allow partial completions).\n\nAlso, we must reject atomic bio to targets that don't support them,\notherwise this BUG could be triggered by stray bios that have the\nREQ_ATOMIC set.\n\nSigned-off-by: John Garry <john.g.garry@oracle.com>\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nTested-by: John Garry <john.g.garry@oracle.com>"
+  },
+  {
+    "sha": "b9dd1f71e6fca46c9efed7e1328d1b2f4dacd19b",
+    "author": null,
+    "date": "2025-11-17T20:43:54+00:00",
+    "message": "dm-verity: remove useless mempool\n\nv->fec->extra_pool has zero reserved entries, so we can remove it and use\nthe kernel cache directly.\n\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReviewed-by: Eric Biggers <ebiggers@kernel.org>"
+  },
+  {
+    "sha": "d9f3e47d3fae0c101d9094bc956ed24e7a0ee801",
+    "author": null,
+    "date": "2025-11-14T15:54:01+00:00",
+    "message": "dm-verity: disable recursive forward error correction\n\nThere are two problems with the recursive correction:\n\n1. It may cause denial-of-service. In fec_read_bufs, there is a loop that\nhas 253 iterations. For each iteration, we may call verity_hash_for_block\nrecursively. There is a limit of 4 nested recursions - that means that\nthere may be at most 253^4 (4 billion) iterations. Red Hat QE team\nactually created an image that pushes dm-verity to this limit - and this\nimage just makes the udev-worker process get stuck in the 'D' state.\n\n2. It doesn't work. In fec_read_bufs we store data into the variable\n\"fio->bufs\", but fio bufs is shared between recursive invocations, if\n\"verity_hash_for_block\" invoked correction recursively, it would\noverwrite partially filled fio->bufs.\n\nSigned-off-by: Mikulas Patocka <mpatocka@redhat.com>\nReported-by: Guangwu Zhang <guazhang@redhat.com>\nReviewed-by: Sami Tolvanen <samitolvanen@google.com>\nReviewed-by: Eric Biggers <ebiggers@kernel.org>"
+  },
+  {
+    "sha": "f6a458746f905adb7d70e50e8b9383dc9e3fd75f",
+    "author": null,
+    "date": "2025-12-09T22:34:17+00:00",
+    "message": "crypto: arm64/ghash - Fix incorrect output from ghash-neon\n\nCommit 9a7c987fb92b (\"crypto: arm64/ghash - Use API partial block\nhandling\") made ghash_finup() pass the wrong buffer to\nghash_do_simd_update().  As a result, ghash-neon now produces incorrect\noutputs when the message length isn't divisible by 16 bytes.  Fix this.\n\n(I didn't notice this earlier because this code is reached only on CPUs\nthat support NEON but not PMULL.  I haven't yet found a way to get\nqemu-system-aarch64 to emulate that configuration.)\n\nFixes: 9a7c987fb92b (\"crypto: arm64/ghash - Use API partial block handling\")\nCc: stable@vger.kernel.org\nReported-by: Diederik de Haas <diederik@cknow-tech.com>\nCloses: https://lore.kernel.org/linux-crypto/DETXT7QI62KE.F3CGH2VWX1SC@cknow-tech.com/\nTested-by: Diederik de Haas <diederik@cknow-tech.com>\nAcked-by: Herbert Xu <herbert@gondor.apana.org.au>\nLink: https://lore.kernel.org/r/20251209223417.112294-1-ebiggers@kernel.org\nSigned-off-by: Eric Biggers <ebiggers@kernel.org>"
+  },
+  {
+    "sha": "161a0c617ab172bbcda7ce61803addeb2124dbff",
+    "author": "tiwai",
+    "date": "2025-12-10T13:15:51+00:00",
+    "message": "ALSA: hda: intel-dsp-config: Prefer legacy driver as fallback\n\nWhen config table entries don't match with the device to be probed,\ncurrently we fall back to SND_INTEL_DSP_DRIVER_ANY, which means to\nallow any drivers to bind with it.\n\nThis was set so with the assumption (or hope) that all controller\ndrivers should cover the devices generally, but in practice, this\ncaused a problem as reported recently.  Namely, when a specific\nkconfig for SOF isn't set for the modern Intel chips like Alderlake,\na wrong driver (AVS) got probed and failed.  This is because we have\nentries like:\n\n #if IS_ENABLED(CONFIG_SND_SOC_SOF_ALDERLAKE)\n /* Alder Lake / Raptor Lake */\n \t{\n \t\t.flags = FLAG_SOF | FLAG_SOF_ONLY_IF_DMIC_OR_SOUNDWIRE,\n \t\t.device = PCI_DEVICE_ID_INTEL_HDA_ADL_S,\n \t},\n ....\n #endif\n\nso this entry is effective only when CONFIG_SND_SOC_SOF_ALDERLAKE is\nset.  If not set, there is no matching entry, hence it returns\nSND_INTEL_DSP_DRIVER_ANY as fallback.  OTOH, if the kconfig is set, it\nexplicitly falls back to SND_INTEL_DSP_DRIVER_LEGACY when no DMIC or\nSoundWire is found -- that was the working scenario.  That being said,\nthe current setup may be broken for modern Intel chips that are\nsupposed to work with either SOF or legacy driver when the\ncorresponding kconfig were missing.\n\nFor addressing the problem above, this patch changes the fallback\ndriver to the legacy driver, i.e. return SND_INTEL_DSP_DRIVER_LEGACY\ntype as much as possible.  When CONFIG_SND_HDA_INTEL is also disabled,\nthe fallback is set to SND_INTEL_DSP_DRIVER_ANY type, just to be sure.\n\nReported-by: Askar Safin <safinaskar@gmail.com>\nCloses: https://lore.kernel.org/all/20251014034156.4480-1-safinaskar@gmail.com/\nTested-by: Askar Safin <safinaskar@gmail.com>\nReviewed-by: Peter Ujfalusi <peter.ujfalusi@linux.intel.com>\nSigned-off-by: Takashi Iwai <tiwai@suse.de>\nLink: https://patch.msgid.link/20251210131553.184404-1-tiwai@suse.de"
+  },
+  {
+    "sha": "dd9143371a8619f496e29160390fcafcee1371d1",
+    "author": null,
+    "date": "2025-12-10T12:22:37+00:00",
+    "message": "Merge branches 'fixes' and 'misc' into for-next"
+  },
+  {
+    "sha": "fd2dee1c6e2256f726ba33fd3083a7be0efc80d3",
+    "author": null,
+    "date": "2025-12-05T10:52:12+00:00",
+    "message": "ARM: fix branch predictor hardening\n\n__do_user_fault() may be called with indeterminent interrupt enable\nstate, which means we may be preemptive at this point. This causes\nproblems when calling harden_branch_predictor(). For example, when\ncalled from a data abort, do_alignment_fault()->do_bad_area().\n\nMove harden_branch_predictor() out of __do_user_fault() and into the\ncalling contexts.\n\nMoving it into do_kernel_address_page_fault(), we can be sure that\ninterrupts will be disabled here.\n\nConverting do_translation_fault() to use do_kernel_address_page_fault()\nrather than do_bad_area() means that we keep branch predictor handling\nfor translation faults. Interrupts will also be disabled at this call\nsite.\n\ndo_sect_fault() needs special handling, so detect user mode accesses\nto kernel-addresses, and add an explicit call to branch predictor\nhardening.\n\nFinally, add branch predictor hardening to do_alignment() for the\nfaulting case (user mode accessing kernel addresses) before interrupts\nare enabled.\n\nThis should cover all cases where harden_branch_predictor() is called,\nensuring that it is always has interrupts disabled, also ensuring that\nit is called early in each call path.\n\nReviewed-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nTested-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nSigned-off-by: Russell King (Oracle) <rmk+kernel@armlinux.org.uk>"
+  },
+  {
+    "sha": "7733bc7d299d682f2723dc38fc7f370b9bf973e9",
+    "author": null,
+    "date": "2025-12-05T11:03:07+00:00",
+    "message": "ARM: fix hash_name() fault\n\nZizhi Wo reports:\n\n\"During the execution of hash_name()->load_unaligned_zeropad(), a\n potential memory access beyond the PAGE boundary may occur. For\n example, when the filename length is near the PAGE_SIZE boundary.\n This triggers a page fault, which leads to a call to\n do_page_fault()->mmap_read_trylock(). If we can't acquire the lock,\n we have to fall back to the mmap_read_lock() path, which calls\n might_sleep(). This breaks RCU semantics because path lookup occurs\n under an RCU read-side critical section.\"\n\nThis is seen with CONFIG_DEBUG_ATOMIC_SLEEP=y and CONFIG_KFENCE=y.\n\nKernel addresses (with the exception of the vectors/kuser helper\npage) do not have VMAs associated with them. If the vectors/kuser\nhelper page faults, then there are two possibilities:\n\n1. if the fault happened while in kernel mode, then we're basically\n   dead, because the CPU won't be able to vector through this page\n   to handle the fault.\n2. if the fault happened while in user mode, that means the page was\n   protected from user access, and we want to fault anyway.\n\nThus, we can handle kernel addresses from any context entirely\nseparately without going anywhere near the mmap lock. This gives us\nan entirely non-sleeping path for all kernel mode kernel address\nfaults.\n\nAs we handle the kernel address faults before interrupts are enabled,\nthis change has the side effect of improving the branch predictor\nhardening, but does not completely solve the issue.\n\nReported-by: Zizhi Wo <wozizhi@huaweicloud.com>\nReported-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nLink: https://lore.kernel.org/r/20251126090505.3057219-1-wozizhi@huaweicloud.com\nReviewed-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nTested-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nSigned-off-by: Russell King (Oracle) <rmk+kernel@armlinux.org.uk>"
+  },
+  {
+    "sha": "40b466db1dffb41f0529035c59c5739636d0e5b8",
+    "author": null,
+    "date": "2025-12-05T17:09:44+00:00",
+    "message": "ARM: allow __do_kernel_fault() to report execution of memory faults\n\nAllow __do_kernel_fault() to detect the execution of memory, so we can\nprovide the same fault message as do_page_fault() would do. This is\nrequired when we split the kernel address fault handling from the\nmain do_page_fault() code path.\n\nReviewed-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nTested-by: Xie Yuanbin <xieyuanbin1@huawei.com>\nSigned-off-by: Russell King (Oracle) <rmk+kernel@armlinux.org.uk>"
+  },
+  {
+    "sha": "21c1466ea25114871707d95745a16ebcf231e197",
+    "author": "idryomov",
+    "date": "2025-12-07T16:39:44+00:00",
+    "message": "rbd: stop selecting CRC32, CRYPTO, and CRYPTO_AES\n\nNone of the RBD code directly requires CRC32, CRYPTO, or CRYPTO_AES.\nThese options are needed by CEPH_LIB code and they are selected there\ndirectly.\n\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>\nReviewed-by: Dongsheng Yang <dongsheng.yang@linux.dev>"
+  },
+  {
+    "sha": "3680fc138e31d8a9e8e344d72c6692e921dbb4a3",
+    "author": null,
+    "date": "2025-12-05T06:51:04+00:00",
+    "message": "ceph: stop selecting CRC32, CRYPTO, and CRYPTO_AES\n\nNone of the CEPH_FS code directly requires CRC32, CRYPTO, or CRYPTO_AES.\nThese options do get selected indirectly anyway via CEPH_LIB, which does\nneed them, but there is no need for CEPH_FS to select them too.\n\nSigned-off-by: Eric Biggers <ebiggers@kernel.org>\nReviewed-by: Ilya Dryomov <idryomov@gmail.com>\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>"
+  },
+  {
+    "sha": "8c738512714e8c0aa18f8a10c072d5b01c83db39",
+    "author": "idryomov",
+    "date": "2025-12-02T09:32:31+00:00",
+    "message": "libceph: make decode_pool() more resilient against corrupted osdmaps\n\nIf the osdmap is (maliciously) corrupted such that the encoded length\nof ceph_pg_pool envelope is less than what is expected for a particular\nencoding version, out-of-bounds reads may ensue because the only bounds\ncheck that is there is based on that length value.\n\nThis patch adds explicit bounds checks for each field that is decoded\nor skipped.\n\nCc: stable@vger.kernel.org\nReported-by: ziming zhang <ezrakiez@gmail.com>\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>\nReviewed-by: Xiubo Li <xiubli@redhat.com>\nTested-by: ziming zhang <ezrakiez@gmail.com>"
+  },
+  {
+    "sha": "04d8712b079327409b09dee628378f9583e2e035",
+    "author": "andy-shev",
+    "date": "2025-11-10T14:46:53+00:00",
+    "message": "libceph: Amend checking to fix `make W=1` build breakage\n\nIn a few cases the code compares 32-bit value to a SIZE_MAX derived\nconstant which is much higher than that value on 64-bit platforms,\nClang, in particular, is not happy about this\n\nnet/ceph/osdmap.c:1441:10: error: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Werror,-Wtautological-constant-out-of-range-compare]\n 1441 |         if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))\n      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nnet/ceph/osdmap.c:1624:10: error: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Werror,-Wtautological-constant-out-of-range-compare]\n 1624 |         if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))\n      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFix this by casting to size_t. Note, that possible replacement of SIZE_MAX\nby U32_MAX may lead to the behaviour changes on the corner cases.\n\nSigned-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>\nReviewed-by: Viacheslav Dubeyko <Slava.Dubeyko@ibm.com>\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>"
+  },
+  {
+    "sha": "87327d4eaaeafd3a2f6a1ffe84d6d25a96a2495d",
+    "author": "andy-shev",
+    "date": "2025-11-10T14:44:04+00:00",
+    "message": "ceph: Amend checking to fix `make W=1` build breakage\n\nIn a few cases the code compares 32-bit value to a SIZE_MAX derived\nconstant which is much higher than that value on 64-bit platforms,\nClang, in particular, is not happy about this\n\nfs/ceph/snap.c:377:10: error: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Werror,-Wtautological-constant-out-of-range-compare]\n  377 |         if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))\n      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFix this by casting to size_t. Note, that possible replacement of SIZE_MAX\nby U32_MAX may lead to the behaviour changes on the corner cases.\n\nSigned-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>\nReviewed-by: Viacheslav Dubeyko <Slava.Dubeyko@ibm.com>\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>"
+  },
+  {
+    "sha": "d927a595ab2f6de4e10b3e3962bc70ab61d8f907",
+    "author": "MaxKellermann",
+    "date": "2025-09-25T10:45:12+00:00",
+    "message": "ceph: add trace points to the MDS client\n\nThis patch adds trace points to the Ceph filesystem MDS client:\n\n- request submission (CEPH_MSG_CLIENT_REQUEST) and completion\n  (CEPH_MSG_CLIENT_REPLY)\n- capabilities (CEPH_MSG_CLIENT_CAPS)\n\nThese are the central pieces that are useful for analyzing MDS\nlatency/performance problems from the client's perspective.\n\nIn the long run, all doutc() calls should be replaced with\ntracepoints.  This way, the Ceph filesystem can be traced at any time\n(without spamming the kernel log).  Additionally, trace points can be\nused in BPF programs (which can even deference the pointer parameters\nand extract more values).\n\nSigned-off-by: Max Kellermann <max.kellermann@ionos.com>\nReviewed-by: Viacheslav Dubeyko <Slava.Dubeyko@ibm.com>\nSigned-off-by: Ilya Dryomov <idryomov@gmail.com>"
+  }
+]

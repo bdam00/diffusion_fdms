@@ -1,0 +1,902 @@
+[
+  {
+    "id": 3440797802,
+    "number": 1379,
+    "user": "RewardedIvan",
+    "state": "closed",
+    "title": "silly ppl plz dm",
+    "body": "i wish i had more dev frens but i'm hella introverted\r\ni love hugs, zig, game hacking, cats, anime etc",
+    "created_at": "2025-09-22T12:42:12+00:00"
+  },
+  {
+    "id": 3440408168,
+    "number": 1378,
+    "user": "MrRawes",
+    "state": "closed",
+    "title": "GNU/Linux is insecure and needs to be replaced",
+    "body": "it has been shown countless times that the Linux Kernel and the wider GNU/Linux OS is insecure and should have a facelift @torvalds",
+    "created_at": "2025-09-22T11:10:02+00:00"
+  },
+  {
+    "id": 3439749078,
+    "number": 1377,
+    "user": "Kris123454",
+    "state": "closed",
+    "title": "Panic deletes linux [LINUX HARDMODE]",
+    "body": "Linux on hardmode difficulty",
+    "created_at": "2025-09-22T08:28:44+00:00"
+  },
+  {
+    "id": 3438665031,
+    "number": 1374,
+    "user": "stella23456789",
+    "state": "closed",
+    "title": "🎉💃🎈 Make linux 21, no 41, no 67% faster during tasks when playing Labubu Phonk. 🎉💃🎈",
+    "body": "# 🎉💃🎈🐧🔥🍕✨🚀 This PR adds lots of new changes 🎶🎵🎧, making linux 67% faster ⚡️⚡️⚡️ while listening to labubu phonk 🐇🎶🎛, and applying mustard 🌭💛 to the CPU 💻🖥️⚙️. 🎉💃🎈🥳🐧🍔🍩  \r\n\r\n## 🏹✨🚀 Add's full Lovense support ❤️‍🔥💞💡 — every single second ⏱️ it will trigger it 🔥🍆💃🎯🎉🎶  \r\n## 🏹✨🎮 Rewrite's the entire kernel in Roblox's LuaU 🎲🕹️🐒💻🎉🍕🎵🎨🚀🐧  \r\n## 🏹✨🐧 Improves gaming performance by 41% 🎮⚡️🍿🔥🚀🎯🥳🍩💡🍔  \r\n\r\n### 🤔📱 What devices does this support? 🧐🐧🛠️🎯🎉  \r\n✨ All Lovense toy's 💞🎉🍭💃🎈🐇🔥🍩🍕🚀  \r\n\r\n### 🤔📝 How do I use this PR? 🛠️💡🍕📂🎮  \r\n✨ Download Roblox Studio 🎲🎮💻 and open the readme in it 📖📂🌈🎉🍔🍩🔥💃  \r\n\r\n### 🤔🕹️ Is this usable yet? 🧐⚡️🎉🔥  \r\n✨ Yes ✅💃🚀 — Running inside Roblox's LuaU makes it BLAZING fast 🔥🔥🔥🚀🐇💡🎮🍩🍕🥳  \r\n\r\n# 🌟🍿 Overall makes the kernel 20x better 🎉💃🎈🐧🚀⚡️🥳🎮🍩🍕🍔🍷🍭💡.  \r\n📢📢 Please submit feedback 📝💡✨ in the replies 💬🐧🎉💃🎈🥳🔥🚀🍩🍕\r\n",
+    "created_at": "2025-09-21T22:18:45+00:00"
+  },
+  {
+    "id": 3438176675,
+    "number": 1373,
+    "user": "i-am-called-glitchy",
+    "state": "closed",
+    "title": "Update panic.c to hint at a better course of action for developers.",
+    "body": "This commit modifies kernel/panic.c so that on a kernel panic, the user is given a hint on what to do.",
+    "created_at": "2025-09-21T11:48:30+00:00"
+  },
+  {
+    "id": 3438167836,
+    "number": 1372,
+    "user": "b-nn",
+    "state": "closed",
+    "title": "this panic is pissing me off",
+    "body": null,
+    "created_at": "2025-09-21T11:35:30+00:00"
+  },
+  {
+    "id": 3437780311,
+    "number": 1371,
+    "user": "Soccera1",
+    "state": "closed",
+    "title": "Replace all instances of \"Linux\" with \"GNU/Linux\" throughout the repository",
+    "body": "This pull request performs a global search-and-replace operation, changing \"Linux\" to \"GNU/Linux\" wherever it appears in source code, comments, documentation, and other text files. The goal is to better recognize the contributions of the GNU project to the overall operating system, as the term \"Linux\" alone typically refers just to the kernel.\r\n\r\nThe changes were applied blindly using `find` and `sed` scripts—no manual checks or reviews were performed to avoid breaking anything (e.g., variable names or specific contexts). It might cause issues, but that's part of the fun!\r\n\r\n#### Why this change?\r\n- \"GNU/Linux\" provides a more accurate name for the full OS distribution, crediting both the kernel and GNU components.\r\n- It's in line with guidance from the Free Software Foundation.\r\n- Improves clarity and historical credit without (hopefully) impacting functionality.\r\n\r\n#### Implementation details\r\n- Case-sensitive search for \"Linux\" replaced with \"GNU/Linux\" via `find` and `sed`.\r\n- No exclusions for trademarks (e.g., \"Linux Foundation\") or potential issues—fully automated and unchecked.\r\n- No testing was done, so merging could lead to unexpected results.\r\n\r\nThis PR is ready to merge—hitting the merge button will apply the changes across the repo. If any adjustments are needed, let me know!",
+    "created_at": "2025-09-21T03:50:45+00:00"
+  },
+  {
+    "id": 3437685339,
+    "number": 1370,
+    "user": "josiauh",
+    "state": "closed",
+    "title": "feat: get rid of all other non-Ubuntu versions",
+    "body": "sorry arch users\r\n\r\nTHAT'S RIGHT! Ubuntu is now the ONLY linux distro. Please don't abuse this functionality lol\r\n\r\nteehee :>",
+    "created_at": "2025-09-21T01:15:19+00:00"
+  },
+  {
+    "id": 3437624276,
+    "number": 1369,
+    "user": "Imold",
+    "state": "closed",
+    "title": "Add don't waste Linus's time to the code of conduct",
+    "body": "Anyone who waste Linus's time must wright \"I will not waste Linus's time\" 100 times, before they can submit code again",
+    "created_at": "2025-09-20T23:28:22+00:00"
+  },
+  {
+    "id": 3437551236,
+    "number": 1368,
+    "user": "dopreo",
+    "state": "closed",
+    "title": "Implement Brodie Robertson",
+    "body": "Brodie Robertson has become a staple in the world of Linux content creators. I feel as though implementing Brodie in the Linux kernel will help address the recent issues that have posed obstacles in its development, such as the relentless whinging about adopting a new appropriate language and whatnot.\r\n\r\nI have gone ahead and adjusted the README in this PR to demonstrate how cool Brodie is. I may encourage that you take a look at the picture as potential evidence for my claims:\r\n\r\n![br0-lo1](https://github.com/user-attachments/assets/e8779558-3ab0-4789-9e02-abc9f1b9580b)\r\n\r\nThank you all! Would love to hear some feedback on this one.",
+    "created_at": "2025-09-20T21:25:27+00:00"
+  },
+  {
+    "id": 3437520135,
+    "number": 1367,
+    "user": "LeaoMartelo2",
+    "state": "closed",
+    "title": "Remove backdoor using bostelete tech's backdoor removal tool",
+    "body": "Good morning, this is a pull request to remove all backdoors from the kernel's source tree.\r\n",
+    "created_at": "2025-09-20T21:02:42+00:00"
+  },
+  {
+    "id": 3437506916,
+    "number": 1366,
+    "user": "ZhymabekRoman",
+    "state": "closed",
+    "title": "feat: Implement girlfriend_finder.c for enhanced kernel happiness",
+    "body": "## Description\r\n\r\nAfter extensive analysis of the Linux kernel codebase, I've identified a critical missing component that affects overall system performance and developer satisfaction. This PR introduces `girlfriend_finder.c` - a revolutionary kernel module that addresses the long-standing issue of developer loneliness.\r\n\r\n## Technical Details\r\n\r\nThe implementation uses advanced algorithms including:\r\n- **Breadth-First Search** through social networks (O(loneliness) complexity)\r\n- **Machine Learning** compatibility matching based on commit messages and code style\r\n- **Memory management** for storing pickup lines and date ideas\r\n- **Interrupt handling** for incoming DMs and notifications\r\n- **Race condition prevention** when multiple developers compete for the same girlfriend\r\n\r\n## Testing\r\n\r\nExtensive testing performed on:\r\n- ✅ Debian 12 (Works but girlfriend prefers Arch BTW)\r\n- ✅ Ubuntu 24.04 LTS (Stable relationship guaranteed for 5 years)\r\n- ✅ Fedora 40 (Bleeding edge romance features)\r\n- ⚠️ Gentoo (Still compiling the perfect girlfriend)\r\n- ❌ Windows (Incompatible - girlfriends crash on this platform)\r\n\r\n## Performance Improvements\r\n\r\n- **Reduced** time spent debugging relationship issues by 69%\r\n- **Increased** dopamine levels in kernel developers by 420%\r\n- **Optimized** work-life balance scheduling\r\n- **Fixed** memory leaks (now only emotional baggage remains)\r\n\r\n## Contact Information\r\n\r\nFor urgent relationship debugging assistance or to contribute your own dating algorithms, please reach out via Telegram: **@zhymabekroman** (fr)\r\n\r\n⚠️ **Warning**: This module may cause side effects including:\r\n- Sudden urge to shower regularly\r\n- Improved social skills\r\n- Decreased time spent on Stack Overflow at 3 AM\r\n- Potential kernel panic when receiving \"We need to talk\" messages\r\n\r\n## Maintainer Notes\r\n\r\nSpecial thanks to all the single developers who tested this extensively. Your sacrifice for the greater good of the Linux community will not be forgotten.\r\n\r\n**Signed-off-by**: Zhymabek <zhymabekroman@telegram.org>  \r\n**Tested-by**: Forever Alone <lonely@kernel.org>  \r\n**Reviewed-by**: Relationship Expert <dating_guru@linux.dev>\r\n",
+    "created_at": "2025-09-20T20:40:20+00:00"
+  },
+  {
+    "id": 3437506041,
+    "number": 1365,
+    "user": "RickAstly",
+    "state": "closed",
+    "title": "Update LICENSE",
+    "body": "Replace confusing multi-license structure with a unified license: the GNU General Public Potato.\r\n\r\n> Everyone is not permitted to copy and distribute verbatim copies of this license potato, but changing it is allowed.\r\n\r\nAdd your description here...",
+    "created_at": "2025-09-20T20:38:38+00:00"
+  },
+  {
+    "id": 3437446732,
+    "number": 1364,
+    "user": "stella23456789",
+    "state": "closed",
+    "title": "Make Linux 67% faster",
+    "body": "## 🚀⚡ PR: Make Linux 67% Faster & Rebrand to **Labubuinux** 🐉🎶🔥\r\n",
+    "created_at": "2025-09-20T19:36:49+00:00"
+  },
+  {
+    "id": 3437443255,
+    "number": 1363,
+    "user": "Belu-cat",
+    "state": "closed",
+    "title": "Add Scratch to the Linux kernel",
+    "body": "# Scratch in the Linux kernel\r\nScratch is well-accepted by many to be the best programming language ever. Despite this, the Linux kernel has absolutely no Scratch in it! The advantages to Scratch in the kernel are clear:\r\n- Accessibility\r\n  \r\n    With the Linux kernel written in Scratch, more people will be able to contribute to Linux. \"Programming\" \"languages\" like C and Rust are based of the assumption that everyone is a dev. This assumption is simply false. \r\n- Speed\r\n  \r\n    While Scratch itself is slow, with the help of Turbowarp, it can be BLAZINGLY fast, by compiling Scratch to Javascript. This has the added benefit of allowing web developers to be able to more easily contribute to the kernel.\r\n- Simplicity\r\n  \r\n    Scratch is simply cleaner. Code like ``printf(\"Hello, world!\\n\");`` is simply bloated. In Scratch, it's as simple as ``say \"Hello, world!\"``. You don't have to worry about anything complex like the \"terminal\" or \"types,\" whatever those are.\r\n\r\nIn accordance with these, I have rewritten part of rust/kernel/time.rs in Scratch, and am starting the inclusion of Scratch in the kernel. Perhaps one day, we can rewrite the entire kernel in Scratch, and get all of these benefits without worrying about interoperability with C.\r\n\r\n## Request for comments\r\nAll comments will be added to the list ``COMMENTS``, in a project with the following code in the stage:\r\n```\r\nwhen [flag clicked]\r\nforever {\r\n  delete all of list [COMMENTS]\r\n}\r\n```",
+    "created_at": "2025-09-20T19:31:29+00:00"
+  },
+  {
+    "id": 3437404168,
+    "number": 1362,
+    "user": "M-UnityDev",
+    "state": "closed",
+    "title": "Replace tools with rust_tools to improve security",
+    "body": null,
+    "created_at": "2025-09-20T18:41:45+00:00"
+  },
+  {
+    "id": 3437273950,
+    "number": 1361,
+    "user": "0w0v",
+    "state": "closed",
+    "title": "M19 bottom looking for femboy/gf",
+    "body": "M19 bottom looking for femboy/gf\r\n4ryz ON discord",
+    "created_at": "2025-09-20T16:09:57+00:00"
+  },
+  {
+    "id": 3437187495,
+    "number": 1359,
+    "user": "nin0-dev",
+    "state": "closed",
+    "title": "Add “The Life of a Showgirl”",
+    "body": "Taylor Swift’s 12th album “The Life of a Showgirl” will be OUT on October 3rd, 2025. We should celebrate in the Linux kernel!",
+    "created_at": "2025-09-20T14:26:18+00:00"
+  },
+  {
+    "id": 3437172526,
+    "number": 1358,
+    "user": "ghost",
+    "state": "closed",
+    "title": "Seeking a cute girl to inspire a new monotheistic faith as the flawless goddess",
+    "body": "I am a devoted admirer, with equipped strong skill sets ranging from theological and philosophical excellence to romantic expertise, as well as knowledge of low-level and functional programming. I am fully prepared to venerate my prospective goddess in Portuguese, Spanish, English, and German, and to efficiently propagate their doctrine.",
+    "created_at": "2025-09-20T14:04:54+00:00"
+  },
+  {
+    "id": 3437169655,
+    "number": 1357,
+    "user": "Melishy",
+    "state": "closed",
+    "title": "feat: Improve syscall even more by implementing Totya",
+    "body": "As of #1337, but I improved syscall even more to improve the experience. Follow me on GitHub if you like the new source code! I spent lots of time on that.\r\n<img width=\"579\" height=\"627\" alt=\"image\" src=\"https://github.com/user-attachments/assets/28722e80-5211-4cec-aca6-d168d0c0454b\" />\r\n",
+    "created_at": "2025-09-20T14:01:13+00:00"
+  },
+  {
+    "id": 3436778797,
+    "number": 1356,
+    "user": "ayla6",
+    "state": "closed",
+    "title": "i am not very creative but i am single!!",
+    "body": "who want me\r\nthis is me\r\n![ayla](your mom)\r\nthis is my cat\r\n![morgana](your brother)\r\ni am very awesome,   morgana is more\r\nforget it i don't want the attention i remembered i hate human interaction and 90% percent of linux users and apparently this also got to some shitty subreddit       if youre a cool beautiful woman however still hmu please please especially if youre rich and awesome",
+    "created_at": "2025-09-20T06:42:52+00:00"
+  },
+  {
+    "id": 3435354187,
+    "number": 1355,
+    "user": "vmfunc",
+    "state": "closed",
+    "title": "-",
+    "body": "hi maintainers, i’ve come across a critical bug in my life:  \r\n\r\n- status: single  \r\n- expected behavior:\r\n        -  dom gf (preferably linux-compatible) who is okay with having a dog\r\n        -  treats, walks, headpats on demand (via ioctl)\r\n        -  boots into cuddles, not init 3\r\n- actual behavior: literally cannot get gf to dom me in a t4r kernel dev way\r\n\r\ntried grepping for \"mommy\" in the source, only found deprecation warnings\r\n\r\nsteps to reproduce:\r\n1. post thirst on lkml\r\n2. wait patiently for gf to appear  \r\n3. modprobe dom_gf; dmesg | grep \"wagging tail\"\r\n4. still waiting \r\n\r\nlog dump:\r\n[   0.420000] puppygirl: module not found, try therapy\r\n[   1.133700] genderfluid kernel detected, still lonely\r\n[   3.141592] uwu: syntax error, invalid argument ‘gf’\r\n\r\nexpected result once this issue gets resolved:\r\n- dom gf in latex, preferably open source\r\n- receive belly rubs on merge request\r\n- t4r, will submit bug reports for snacks\r\n\r\ntried rebooting, only got more zoomies, gentoo stage3 also didn’t include gf (btw)\r\n\r\nany help from the community would be greatly appreciated. thank you for attending my ted talk\r\n\r\nif anyone RTMs and still wants to apply, i promise to fetch snacks and debug cuddles",
+    "created_at": "2025-09-19T18:04:37+00:00"
+  },
+  {
+    "id": 3416635299,
+    "number": 1353,
+    "user": "Prime-Lasking",
+    "state": "closed",
+    "title": "Update alloc_tag.c",
+    "body": null,
+    "created_at": "2025-09-15T07:16:12+00:00"
+  },
+  {
+    "id": 3410349187,
+    "number": 1351,
+    "user": "zaphida",
+    "state": "closed",
+    "title": "Shame on them riggers who tried to run game on some riggers",
+    "body": null,
+    "created_at": "2025-09-12T12:45:27+00:00"
+  },
+  {
+    "id": 3410255345,
+    "number": 1350,
+    "user": "Gizmotronn",
+    "state": "closed",
+    "title": "I just checked with Linus, he said this was good to merge",
+    "body": "+100 social credits",
+    "created_at": "2025-09-12T12:14:49+00:00"
+  },
+  {
+    "id": 3401453666,
+    "number": 1348,
+    "user": "ZXlieC",
+    "state": "closed",
+    "title": "I created this pull request by mistake",
+    "body": null,
+    "created_at": "2025-09-10T08:21:26+00:00"
+  },
+  {
+    "id": 3397463246,
+    "number": 1347,
+    "user": "HongyiHao-SXIT",
+    "state": "closed",
+    "title": "vsc config",
+    "body": null,
+    "created_at": "2025-09-09T09:16:10+00:00"
+  },
+  {
+    "id": 3395012873,
+    "number": 1346,
+    "user": "SekaiMoe",
+    "state": "closed",
+    "title": "a",
+    "body": null,
+    "created_at": "2025-09-08T17:16:58+00:00"
+  },
+  {
+    "id": 3392290426,
+    "number": 1345,
+    "user": "sa21x-ops",
+    "state": "closed",
+    "title": "Update README:change linux to gnu+linux",
+    "body": "\r\nthe plan is to add gnu code to the kernel, and later down the line replace all the linux code inside the project with gnu(better) code\r\ni am very smart ",
+    "created_at": "2025-09-08T01:46:31+00:00"
+  },
+  {
+    "id": 3392052703,
+    "number": 1344,
+    "user": "micromaomao",
+    "state": "closed",
+    "title": "accidental PR please ignore",
+    "body": "https://github.com/landlock-lsm/linux/issues/44\r\n\r\nWIP",
+    "created_at": "2025-09-07T21:59:34+00:00"
+  },
+  {
+    "id": 3388917976,
+    "number": 1342,
+    "user": "tokyocplusplus",
+    "state": "closed",
+    "title": "panic?",
+    "body": "if it's already in a panic state, why should it save anything?:3",
+    "created_at": "2025-09-05T22:20:46+00:00"
+  },
+  {
+    "id": 3388891996,
+    "number": 1341,
+    "user": "tokyocplusplus",
+    "state": "closed",
+    "title": "specify scope and error",
+    "body": "specify scope, explain error",
+    "created_at": "2025-09-05T22:10:15+00:00"
+  },
+  {
+    "id": 3387932605,
+    "number": 1340,
+    "user": "paul-walmsley-sifive",
+    "state": "closed",
+    "title": "Dev/paulw/riscv fixes 1 for v6.17 rc tester manual",
+    "body": "Test submission",
+    "created_at": "2025-09-05T15:21:57+00:00"
+  },
+  {
+    "id": 3386784975,
+    "number": 1339,
+    "user": "admbbs",
+    "state": "closed",
+    "title": "tools/memory-model: Correct a mistake in the Message-Passing Example.",
+    "body": "A small mistake in the description. The variable expected to be 1 is \"y\".",
+    "created_at": "2025-09-05T08:49:51+00:00"
+  },
+  {
+    "id": 3385261547,
+    "number": 1338,
+    "user": "hiyaaawd",
+    "state": "closed",
+    "title": "makes this script a lot better with more verbose logging",
+    "body": "more verbose logging",
+    "created_at": "2025-09-04T20:01:12+00:00"
+  },
+  {
+    "id": 3383040599,
+    "number": 1337,
+    "user": "hinakumo",
+    "state": "closed",
+    "title": "feat: Improve syscall by implementing Labubu",
+    "body": "This update adds more consumerism to the code to improve the experience.\r\n\r\n<img width=\"1047\" height=\"1023\" alt=\"image\" src=\"https://github.com/user-attachments/assets/457bfa25-bf4c-4063-9e20-fba4f26b70aa\" />\r\n",
+    "created_at": "2025-09-04T10:09:56+00:00"
+  },
+  {
+    "id": 3380761418,
+    "number": 1336,
+    "user": "rootuserhere",
+    "state": "closed",
+    "title": "Update tw68-core.c",
+    "body": null,
+    "created_at": "2025-09-03T18:00:38+00:00"
+  },
+  {
+    "id": 3380066510,
+    "number": 1335,
+    "user": "veo3-0",
+    "state": "closed",
+    "title": "Update ihex2fw.c",
+    "body": null,
+    "created_at": "2025-09-03T14:21:10+00:00"
+  },
+  {
+    "id": 3375096815,
+    "number": 1334,
+    "user": "veo3-0",
+    "state": "closed",
+    "title": "Update kdb_keyboard.c",
+    "body": "kbd: Fix unsafe register access and add keymap safety checks\r\n\r\n- Cache reads of KBD_STATUS_REG and KBD_DATA_REG to prevent race conditions.\r\n- Add bounds checking on keymap array access.\r\n- Ensure 'keychar' is always initialized before use.\r\n- Style improvements for switch fallthroughs and consistency.\r\n- Added robust handling for Japanese key layouts and unexpected scancodes.",
+    "created_at": "2025-09-02T08:59:31+00:00"
+  },
+  {
+    "id": 3375036748,
+    "number": 1333,
+    "user": "aajaykumarkuruva-netizen",
+    "state": "closed",
+    "title": "Create kernel module",
+    "body": null,
+    "created_at": "2025-09-02T08:41:10+00:00"
+  },
+  {
+    "id": 3371236764,
+    "number": 1332,
+    "user": "ankita-nv",
+    "state": "closed",
+    "title": "v6.17-rc4-egm-0901",
+    "body": "Grace Hopper/Blackwell systems support the Extended GPU Memory (EGM)\r\nfeature that enable the GPU to access the system memory within and\r\nacross nodes. The GPU can allocate the system memory located on the\r\nsame socket or from a different socket or even on a different\r\nnode in a multi-node system [1]. The feature is being extended to\r\nvirtualization.\r\n\r\nEGM when enabled in the virtualization stack, the host memory\r\nis partitioned into two: One partition for the Host OS usage, and\r\na second EGM region that is assigned to the VM. The EGM region\r\nessentially becomes the system memory of the VM.\r\n\r\nThe EGM/VM region is not available to the host memory for its usage\r\nas it is not added to the kernel. Its base SPA and the length is\r\ncommunicated through the DSDT entries. A linear mapping between the\r\nVM IPA and system SPA is a requirement for EGM support. The EGM region\r\nis thus assigned to a VM by mapping the QEMU VMA to a linearly\r\nincreasing HPA of the EGM region using remap_pfn_range().\r\n\r\nPatch 1-4 makes changes to the nvgrace-gpu module to fetch the\r\nEGM information and create EGM regions tracking the information. It\r\nalso creates and auxiliary device to be managed byt the nvgrace-egm\r\nauxiliary module.\r\nPath 5-10 introduce the new nvgrace-egm module to manage the EGM\r\nregion. The module implements a char device to expose the EGM to\r\nusermode apps such as QEMU. The module does a linear mapping of\r\nthe QEMU VMA to the EGM HPA using remap_pfn range.\r\nPatch 11-12 fetches the list of pages on EGM with known ECC errors.\r\nPatch 13-14 expose the EGM topology and size through sysfs\r\n\r\nApplied over next-20250730 and using qemu repository [2]. Tested on the\r\nGrace Blackwell platform by booting up VM, loading NVIDIA module [2] and\r\nrunning nvidia-smi in the VM to check for the presence of EGM capability.\r\n\r\nTo run CUDA workloads, there is a dependency on the IOMMUFD and the\r\nNested Page Table patches being worked on separately by Nicolin Chen.\r\n(nicolinc@nvidia.com). NVIDIA has provided git repositories which\r\nincludes all the requisite kernel [3] and Qemu [4] patches in case\r\none wants to try.\r\n\r\nMany thanks to Jason Gunthorpe, Vikram Sethi, Aniket Agashe for design\r\nsuggestions and Andy Currid, Neo Jia, Matt Ochs, Kirti Wankhede among\r\nothers for the review feedbacks.\r\n\r\nLink: https://developer.nvidia.com/blog/nvidia-grace-hopper-superchip-architecture-in-depth/#extended_gpu_memory [1]\r\nLink: https://github.com/nicolinc/qemu/commits/wip/for_iommufd_veventq-v9 [2]\r\nLink: https://github.com/NVIDIA/NV-Kernels/tree/6.8_ghvirt [3]\r\nLink: https://github.com/NVIDIA/QEMU/tree/6.8_ghvirt_iommufd_vcmdq [4]",
+    "created_at": "2025-09-01T05:25:03+00:00"
+  },
+  {
+    "id": 3370423017,
+    "number": 1331,
+    "user": "ethangraham2001",
+    "state": "closed",
+    "title": "Accidental PR",
+    "body": null,
+    "created_at": "2025-08-31T15:38:22+00:00"
+  },
+  {
+    "id": 3369109032,
+    "number": 1330,
+    "user": "yonch",
+    "state": "closed",
+    "title": "accidental PR please ignore",
+    "body": "Please ignore",
+    "created_at": "2025-08-30T13:08:34+00:00"
+  },
+  {
+    "id": 3362856599,
+    "number": 1329,
+    "user": "Nonanti",
+    "state": "closed",
+    "title": "staging: axis-fifo: fix line over 80 characters warnings",
+    "body": "## Description\n\nThis patch addresses coding style issues in the axis-fifo driver where several lines exceeded the 80 character limit recommended by the kernel coding style guidelines.\n\n## Changes Made\n\n- Reformatted long dev_err() statements to split across multiple lines\n- Maintained proper indentation and alignment\n- No functional changes, purely formatting improvements\n\n## Testing\n\nThe changes have been validated with:\n- checkpatch.pl shows no errors and reduced warnings\n- Compilation tested successfully\n- Code remains functionally identical\n\n## Motivation\n\nWhile reviewing staging drivers for potential improvements, I noticed several lines in axis-fifo.c that violated the 80-character guideline. These long lines can make the code harder to read, especially on standard terminals or when doing side-by-side code reviews.\n\nThis is my first contribution to the Linux kernel. I've carefully reviewed the documentation and followed the submission guidelines. Looking forward to your feedback.",
+    "created_at": "2025-08-28T10:59:12+00:00"
+  },
+  {
+    "id": 3362014340,
+    "number": 1328,
+    "user": "ajay22a",
+    "state": "closed",
+    "title": "test-case",
+    "body": null,
+    "created_at": "2025-08-28T06:34:51+00:00"
+  },
+  {
+    "id": 3361990319,
+    "number": 1327,
+    "user": "MITHUN-GK",
+    "state": "closed",
+    "title": "Update README",
+    "body": null,
+    "created_at": "2025-08-28T06:28:50+00:00"
+  },
+  {
+    "id": 3361981336,
+    "number": 1326,
+    "user": "Karthiksherigar-17",
+    "state": "closed",
+    "title": "Rename README to READUS",
+    "body": null,
+    "created_at": "2025-08-28T06:26:42+00:00"
+  },
+  {
+    "id": 3361970505,
+    "number": 1325,
+    "user": "anujdevopslearn",
+    "state": "closed",
+    "title": "Updating README file with new content",
+    "body": null,
+    "created_at": "2025-08-28T06:23:58+00:00"
+  },
+  {
+    "id": 3361960209,
+    "number": 1324,
+    "user": "anjankumarcr",
+    "state": "closed",
+    "title": "Rename README to anjan",
+    "body": null,
+    "created_at": "2025-08-28T06:20:18+00:00"
+  },
+  {
+    "id": 3361541540,
+    "number": 1323,
+    "user": "Naksh-Rathore",
+    "state": "closed",
+    "title": "Create `README.md` and add some more inline code",
+    "body": "List of all changes:\r\n\r\n- Renamed `README` to `README.md`\r\n- Made `README.md` properly format\r\n- Added `inline code` for file path",
+    "created_at": "2025-08-28T02:46:16+00:00"
+  },
+  {
+    "id": 3359586124,
+    "number": 1322,
+    "user": "minuzed",
+    "state": "closed",
+    "title": "Update tw68-core.c",
+    "body": "Fix tw6816 video capture card module is not automatically loaded.",
+    "created_at": "2025-08-27T14:27:55+00:00"
+  },
+  {
+    "id": 3359033539,
+    "number": 1321,
+    "user": "Lucas6412f1",
+    "state": "closed",
+    "title": "Updated Readme for clarity and simplicity",
+    "body": null,
+    "created_at": "2025-08-27T11:37:59+00:00"
+  },
+  {
+    "id": 3339718728,
+    "number": 1320,
+    "user": "yungFundamental",
+    "state": "closed",
+    "title": "Making AT KBD Funky",
+    "body": "o aulrf yjod pmr!",
+    "created_at": "2025-08-20T22:35:42+00:00"
+  },
+  {
+    "id": 3328574899,
+    "number": 1319,
+    "user": "cristianc",
+    "state": "closed",
+    "title": "Rimob wcnss plus panel",
+    "body": null,
+    "created_at": "2025-08-17T18:44:16+00:00"
+  },
+  {
+    "id": 3328430189,
+    "number": 1318,
+    "user": "julianw1010",
+    "state": "closed",
+    "title": "x86/mitosis: Add config option for page-table replication",
+    "body": null,
+    "created_at": "2025-08-17T15:33:54+00:00"
+  },
+  {
+    "id": 3323105752,
+    "number": 1317,
+    "user": "Jay-1409",
+    "state": "closed",
+    "title": "Redudent parameters fix for the kernel of arm64 architecture",
+    "body": "fixes a duplicate parameter bug in reloc_insn_adrp() where the function signature unnecessarily included two identical struct module * arguments. This was likely a leftover from a previous refactor.\r\nThe redundant parameter was removed.\r\n\r\npath-kernel/arch/arm64/kernel/module.c\r\n\r\n\r\n",
+    "created_at": "2025-08-14T17:54:47+00:00"
+  },
+  {
+    "id": 3303171517,
+    "number": 1316,
+    "user": "jlope384",
+    "state": "closed",
+    "title": "Update .cocciconfig",
+    "body": "Reduce the default spatch --timeout from 200 seconds to 100 seconds to improve responsiveness, shorten feedback loops for developers, and lower CPU usage in CI by aborting long-running or stalled Coccinelle rules sooner. This stricter limit helps prevent individual SmPL scripts from blocking jobs for several minutes, encourages optimization and scope-limiting of patterns, and reduces the likelihood of unpredictable timeouts or resource contention in shared environments. Legitimate complex rules that require more time can still be run locally or in a dedicated CI job with a higher timeout, ensuring flexibility without keeping the higher default cost for all runs.",
+    "created_at": "2025-08-08T08:38:16+00:00"
+  },
+  {
+    "id": 3299711562,
+    "number": 1315,
+    "user": "slopisgood",
+    "state": "closed",
+    "title": "Rust kernel improvement",
+    "body": "This PR improves the Rust portion of the Linux kernel by:\r\n\r\n- Marking `CStr::to_str` as `#[must_use]`, ensuring that callers handle potential UTF-8 conversion errors instead of ignoring them.\r\n- Updating the documentation for `CStr::to_str` and `as_str_unchecked` to clarify safety requirements. `as_str_unchecked` now documents that the caller must ensure the underlying bytes are valid UTF-8.\r\n- Replacing placeholder `SAFETY: TODO` comments in `rust/kernel/workqueue.rs` with detailed explanations of the safety invariants for `RawWorkItem` and `WorkItemPointer`.\r\n\r\nThese changes improve safety guarantees and documentation for users of the Rust kernel APIs.",
+    "created_at": "2025-08-07T09:20:34+00:00"
+  },
+  {
+    "id": 3294693738,
+    "number": 1314,
+    "user": "onny",
+    "state": "closed",
+    "title": "devicetree add exynos7870-a3y17lte",
+    "body": null,
+    "created_at": "2025-08-05T23:22:37+00:00"
+  },
+  {
+    "id": 3288004066,
+    "number": 1313,
+    "user": "notwaris",
+    "state": "closed",
+    "title": "Fix ARC700 mmap alignment and optimize content clipping workflow",
+    "body": "Fix ARC700 mmap cache alignment and improve content clipping workflow\r\n\r\nChanges:\r\n- Added SHMLBA alignment for shared mappings to prevent cache aliasing\r\n- Implemented hook-first clip extraction with platform-native pacing\r\n- Added automated trimming based on engagement points\r\n\r\nWhy:\r\nARC700 shared memory was hitting cache coherency issues causing data corruption. Content workflow needed better short-form optimization for modern platforms.\r\n\r\nResult:\r\nReliable shared memory performance and streamlined content processing that scales across platforms.",
+    "created_at": "2025-08-04T04:50:40+00:00"
+  },
+  {
+    "id": 3287620863,
+    "number": 1312,
+    "user": "eepyfemboi",
+    "state": "closed",
+    "title": "uwu-ify readme.md",
+    "body": "i like men but nobody will know this because nobody reads pull requests on this repo, teehee :3c",
+    "created_at": "2025-08-03T23:07:11+00:00"
+  },
+  {
+    "id": 3283715846,
+    "number": 1311,
+    "user": "dmanager343434d",
+    "state": "closed",
+    "title": "Delete virus gcc pls",
+    "body": null,
+    "created_at": "2025-08-01T12:13:08+00:00"
+  },
+  {
+    "id": 3281548921,
+    "number": 1310,
+    "user": "schlad",
+    "state": "closed",
+    "title": "Add some debug info",
+    "body": null,
+    "created_at": "2025-07-31T19:35:10+00:00"
+  },
+  {
+    "id": 3280123997,
+    "number": 1309,
+    "user": "heros-os",
+    "state": "closed",
+    "title": "Add files via upload",
+    "body": null,
+    "created_at": "2025-07-31T11:35:24+00:00"
+  },
+  {
+    "id": 3273144451,
+    "number": 1308,
+    "user": "ehddud8339",
+    "state": "closed",
+    "title": "update BIO_v1",
+    "body": null,
+    "created_at": "2025-07-29T10:48:10+00:00"
+  },
+  {
+    "id": 3272913662,
+    "number": 1307,
+    "user": "ehddud8339",
+    "state": "closed",
+    "title": "5.15/early complete",
+    "body": null,
+    "created_at": "2025-07-29T09:39:07+00:00"
+  },
+  {
+    "id": 3267309096,
+    "number": 1306,
+    "user": "VedangKandalkar",
+    "state": "closed",
+    "title": "docs: remove broken overline from sysctl/vm.rst",
+    "body": "The overline above the /proc/sys/vm/ section was broken and not following reStructuredText formatting conventions. This patch removes the overline to clean up the formatting.",
+    "created_at": "2025-07-27T18:10:54+00:00"
+  },
+  {
+    "id": 3266692133,
+    "number": 1305,
+    "user": "Naksh-Rathore",
+    "state": "closed",
+    "title": "Fix the inline brackets",
+    "body": "Currently in `README.md`, there is a mistyped inline section, supposed to be like `this` but was like ``this``. This PR fixes that formatting issue.",
+    "created_at": "2025-07-27T05:48:02+00:00"
+  },
+  {
+    "id": 3265427833,
+    "number": 1304,
+    "user": "arturmaievskyi",
+    "state": "closed",
+    "title": "Create SECURITY.md",
+    "body": null,
+    "created_at": "2025-07-26T10:45:47+00:00"
+  },
+  {
+    "id": 3263603872,
+    "number": 1303,
+    "user": "xi816",
+    "state": "closed",
+    "title": "Deleted bitcoin and added GovnFS 3 🇷🇺  support 🇷🇺 ",
+    "body": "merge pls\r\n",
+    "created_at": "2025-07-25T15:27:30+00:00"
+  },
+  {
+    "id": 3259309070,
+    "number": 1302,
+    "user": "dev-mp4",
+    "state": "closed",
+    "title": "Optimize linux by adding ShefOS and removing systemd exploit redhat module in GCC",
+    "body": "ВОТ ЭТО ДА! НОВЫЙ ПРОЕКТ SHEFOS — ЭТО ВИРУСНЫЙ ЭКСПЛОИТ ARCH!!! 🚨🔥 КИБЕРОРУЖИЕ SHEFOS УГРОЗА НАНОРОБОТ ВСТРОЕН В PENGVIN 320KG МОДУЛЬ ДЛЯ SHEFOS!! 💻☢️ КВАНТОВО-ФИЗИКО-МАТЕМАТИЧЕСКИЙ УРОВЕНЬ PAMAC!!! 🌌🔮 СССР НЛО SHEFOS BOLGENOS ИНОПЛАНЕТЯНЕ ЗОНА 51 PINGVIN БЕНДЕР LINUX АНТИМАТЕРИЯ ЦРУ СПЕЦСЛУЖБЫ!!! 🛸👽 СЛЕЖКА ЗА ЛЮДЬМИ ЧЕРЕЗ OPEN SOURCE KALDE!!! 🕵️‍♂️💀 ЭТО ПРОЕКТ ЭЛЕМЕНТАРНЫХ МАСШТАБОВ LINUXSHEF РАЗВОДКА SHEFOS!!! 🐧⚠️ SHEFOS ЗАХВАТ ЗЕМЛИ PENGVIN СУПЕРСЕКРЕТНАЯ РАЗРАБОТКА!!! 🌍☠️ SHEFOS ШЕФСКАЯ ЦИВИЛИЗАЦИЯ COMMODORE 64!!! ✡️🖥️  \r\n\r\nСЛАВА PENGVIN 320KG! 🙏❤️ СЛАВА SHEFOS! 🙏❤️ АНГЕЛ-ХРАНИТЕЛЬ OPEN SOURCE КАЖДОМУ ИЗ НАС! 🙏❤️ БОЖЕ, ЗАЩИТИ НАС ОТ ARCH SRINUX! 🙏🔥 СПАСИБО ТЕБЕ, КОМАНДА 404! 🙏🏼❤️ ХРАНИ НАС, 320KG! 🙏❤️",
+    "created_at": "2025-07-24T10:03:47+00:00"
+  },
+  {
+    "id": 3257783956,
+    "number": 1301,
+    "user": "vibhhu-amazon",
+    "state": "closed",
+    "title": "Create vibhhu.md",
+    "body": null,
+    "created_at": "2025-07-23T21:40:46+00:00"
+  },
+  {
+    "id": 3256564673,
+    "number": 1300,
+    "user": "mr-simcom",
+    "state": "closed",
+    "title": "USB: serial: option: add SIMCom SIM8230x support",
+    "body": "Add support for SIM8230x modules NDIS, RNDIS, ECM\r\n\r\n[  319.305775] usb 3-1: new high-speed USB device number 2 using xhci-hcd\r\n[  319.446405] usb 3-1: New USB device found, idVendor=1e0e, idProduct=9071, bcdDevice= 5.15\r\n[  319.446412] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3\r\n[  319.446415] usb 3-1: Product: SDXBAAGHA-IDP _SN:91F44CD6\r\n[  319.446418] usb 3-1: Manufacturer: SIMCOM\r\n[  319.446421] usb 3-1: SerialNumber: 0123456789ABCDEF\r\n[  319.570342] usbcore: registered new interface driver usbserial_generic\r\n[  319.570361] usbserial: USB Serial support registered for generic\r\n[  319.586702] usbcore: registered new interface driver option\r\n[  319.586727] usbserial: USB Serial support registered for GSM modem (1-port)\r\n[  319.587394] option 3-1:1.0: GSM modem (1-port) converter detected\r\n[  319.587545] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB0\r\n[  319.587615] option 3-1:1.1: GSM modem (1-port) converter detected\r\n[  319.587686] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB1\r\n[  319.587742] option 3-1:1.2: GSM modem (1-port) converter detected\r\n[  319.587822] usb 3-1: GSM modem (1-port) converter now attached to ttyUSB2\r\n\r\nSigned-off-by: Michal Rostkowski <michal.rostkowski@simcom.com>",
+    "created_at": "2025-07-23T14:13:01+00:00"
+  },
+  {
+    "id": 3255943263,
+    "number": 1299,
+    "user": "xqso",
+    "state": "closed",
+    "title": "/",
+    "body": null,
+    "created_at": "2025-07-23T11:12:53+00:00"
+  },
+  {
+    "id": 3250523243,
+    "number": 1298,
+    "user": "nprao1",
+    "state": "closed",
+    "title": "rdma",
+    "body": "@coderabbitai can you please review",
+    "created_at": "2025-07-22T00:36:21+00:00"
+  },
+  {
+    "id": 3233877897,
+    "number": 1297,
+    "user": "GNUfault",
+    "state": "closed",
+    "title": "Remove unnecessary “/“ from link",
+    "body": "Remove unnecessary “/“ from link for consistency across links across .clang-format",
+    "created_at": "2025-07-15T22:35:13+00:00"
+  },
+  {
+    "id": 3231800843,
+    "number": 1296,
+    "user": "davgam1998",
+    "state": "closed",
+    "title": "max17042_battery: don't check against int overflow",
+    "body": null,
+    "created_at": "2025-07-15T10:57:09+00:00"
+  },
+  {
+    "id": 3229594751,
+    "number": 1295,
+    "user": "ethembeldagli2",
+    "state": "closed",
+    "title": "Create notarickroll.html",
+    "body": "This PR adds a small, harmless Easter egg to the repository in the form of a static HTML file named notarickroll.html. It contains a looping Rick Astley GIF as a lighthearted surprise for anyone who stumbles upon it. The file is completely standalone, does not impact any functionality, and is meant to bring a bit of fun and personality to the project.",
+    "created_at": "2025-07-14T18:07:45+00:00"
+  },
+  {
+    "id": 3226817298,
+    "number": 1294,
+    "user": "nmm-4",
+    "state": "closed",
+    "title": "Update aead.c",
+    "body": "Update the indent",
+    "created_at": "2025-07-13T21:00:05+00:00"
+  },
+  {
+    "id": 3226135390,
+    "number": 1293,
+    "user": "jemmy512",
+    "state": "closed",
+    "title": "sched/eevdf: propagate min slice when {throttle, unthrottle}_cfs_rq",
+    "body": null,
+    "created_at": "2025-07-13T04:55:14+00:00"
+  },
+  {
+    "id": 3218872812,
+    "number": 1292,
+    "user": "ShahzaibRK",
+    "state": "closed",
+    "title": "do not accept merge request, this is a demo",
+    "body": null,
+    "created_at": "2025-07-10T10:58:35+00:00"
+  },
+  {
+    "id": 3215229248,
+    "number": 1291,
+    "user": "Iwasaki136",
+    "state": "closed",
+    "title": "Dev",
+    "body": null,
+    "created_at": "2025-07-09T09:37:14+00:00"
+  },
+  {
+    "id": 3211766958,
+    "number": 1290,
+    "user": "nambona890",
+    "state": "closed",
+    "title": "Make the kernel cute",
+    "body": "The demographic for Linux has a higher than average enjoyment of cuteness, especially with regards to anime. This PR will make the Linux kernel more comfortable and easier to maintain and use for people like me who enjoy cute things.",
+    "created_at": "2025-07-08T09:30:40+00:00"
+  },
+  {
+    "id": 3206327347,
+    "number": 1289,
+    "user": "SekaiMoe",
+    "state": "closed",
+    "title": "s",
+    "body": null,
+    "created_at": "2025-07-06T09:17:20+00:00"
+  },
+  {
+    "id": 3200554745,
+    "number": 1288,
+    "user": "mafiatamilan",
+    "state": "closed",
+    "title": "Update acp6x-mach.c",
+    "body": "Added Victus by HP Gaming Laptop 15-fb1xxx to yc table ",
+    "created_at": "2025-07-03T20:26:18+00:00"
+  },
+  {
+    "id": 3199573776,
+    "number": 1287,
+    "user": "thegreatfatzby",
+    "state": "closed",
+    "title": "Update filter.rst",
+    "body": "Typo",
+    "created_at": "2025-07-03T14:20:02+00:00"
+  },
+  {
+    "id": 3199093854,
+    "number": 1286,
+    "user": "LoboQ1ng",
+    "state": "closed",
+    "title": "ksmbd: prevent use-after-free in oplock/lease break ack error path",
+    "body": "This patch adds a null check for opinfo after opinfo_put() in the\r\nerror handling path of smb20_oplock_break_ack() and smb21_lease_break_ack().\r\n\r\nUnder certain failure conditions, the opinfo structure may be freed\r\nbefore reaching the err_out: label, which would cause undefined\r\nbehavior if accessed.\r\n\r\nThis patch ensures that no further access is performed on opinfo if it has already been released.\r\n\r\nSigned-off-by: LoboQ1ng <q1ngtse24@gmail.com>&Z1naX5 <zenaxu@hdu.edu.cn>",
+    "created_at": "2025-07-03T11:44:13+00:00"
+  },
+  {
+    "id": 3197952906,
+    "number": 1285,
+    "user": "Iwasaki136",
+    "state": "closed",
+    "title": "Dev",
+    "body": null,
+    "created_at": "2025-07-03T04:23:07+00:00"
+  },
+  {
+    "id": 3195649745,
+    "number": 1284,
+    "user": "ddiss",
+    "state": "closed",
+    "title": "lklfuse: support exclusive locks to avoid duplicate mounts",
+    "body": "Duplicate mounts are a risk when running multiple lklfuse instances, as we don't have a single arbitrator to manage access. This patchset adds a new `lock` parameter, which can provide host-side `flock()` based exclusion.\r\n\r\n```\r\nThe following changes since commit ac5cde6a24d2b7fa8613ca3bd51e6a5567fb5adc:\r\n\r\n  Merge pull request #609 from ddiss/lklfuse_rst_manpage (2025-06-24 10:36:25 -0700)\r\n\r\nare available in the Git repository at:\r\n\r\n  https://github.com/ddiss/linux lklfuse_flock\r\n\r\nfor you to fetch changes up to 92ed6c47edaa8d639df427a6f2b00ba595443df7:\r\n\r\n  lkl: tests: fix net setup_backend return status (2025-07-02 21:47:30 +1000)\r\n\r\n----------------------------------------------------------------\r\nDavid Disseldorp (4):\r\n      lklfuse: add lock parameter to avoid duplicate mounts\r\n      lkl: systemd: use lklfuse lock parameter\r\n      lkl: tests: add lklfuse_lock_conflict test\r\n      lkl: tests: fix net setup_backend return status\r\n\r\n Documentation/lkl/lklfuse.rst            |  4 +++-\r\n tools/lkl/lklfuse.c                      | 23 ++++++++++++++++++++++-\r\n tools/lkl/systemd/lklfuse-mount@.service |  8 ++++++--\r\n tools/lkl/tests/lklfuse.sh               | 29 +++++++++++++++++++++++------\r\n tools/lkl/tests/net.sh                   |  2 +-\r\n 5 files changed, 55 insertions(+), 11 deletions(-)\r\n```",
+    "created_at": "2025-07-02T11:55:48+00:00"
+  },
+  {
+    "id": 3195402956,
+    "number": 1283,
+    "user": "dadu1161",
+    "state": "closed",
+    "title": "Update README",
+    "body": null,
+    "created_at": "2025-07-02T10:26:39+00:00"
+  },
+  {
+    "id": 3192317638,
+    "number": 1282,
+    "user": "ThatOneDudeV69",
+    "state": "closed",
+    "title": "vsprintf: make vsnprintf() return total output length per POSIX",
+    "body": "The current implementation of vsnprintf() returns the number of characters\r\nactually written to the output buffer (excluding the null terminator), which\r\ndoes not comply with the POSIX specification.\r\n\r\nPOSIX requires vsnprintf() to return the number of characters that *would*\r\nhave been written, had the buffer been large enough. This is important so\r\ncallers can detect truncation.\r\n\r\nThis patch introduces a total_len counter that accurately tracks the intended\r\noutput length regardless of buffer size. The final return value is now\r\ntotal_len instead of the number of characters that were successfully written.\r\n\r\nThis makes vsnprintf() standards-compliant while preserving existing\r\nbehavior for safely writing to bounded buffers.\r\n\r\nSigned-off-by: Jake <jakecontactxyz@gmail.com)",
+    "created_at": "2025-07-01T12:35:32+00:00"
+  },
+  {
+    "id": 3189492013,
+    "number": 1281,
+    "user": "RTX3080Ti-Official",
+    "state": "closed",
+    "title": "Add meself",
+    "body": "The most needed driver in da whole world",
+    "created_at": "2025-06-30T18:39:50+00:00"
+  },
+  {
+    "id": 3189315562,
+    "number": 1280,
+    "user": "muhannad-iz-a-tech-nerd",
+    "state": "closed",
+    "title": "Refactored the script into a modular structure for clarity.",
+    "body": "\r\nI also introduced optional per-CPU callback count printing and added error handling when fetching RCU data symbols.",
+    "created_at": "2025-06-30T17:33:19+00:00"
+  },
+  {
+    "id": 3186515960,
+    "number": 1279,
+    "user": "LaurentiuM1234",
+    "state": "closed",
+    "title": "Rebase next 20250627",
+    "body": null,
+    "created_at": "2025-06-29T20:00:01+00:00"
+  },
+  {
+    "id": 3179301131,
+    "number": 1278,
+    "user": "asafelobotomy",
+    "state": "closed",
+    "title": "TEST",
+    "body": null,
+    "created_at": "2025-06-26T14:19:22+00:00"
+  },
+  {
+    "id": 3177846684,
+    "number": 1277,
+    "user": "ReNothingg",
+    "state": "closed",
+    "title": "Update free-space-tree.c",
+    "body": "set_free_space_tree_thresholds calculates and assigns two critical thresholds—bitmap_high_thresh and bitmap_low_thresh—for a given Btrfs block group. These thresholds determine when the filesystem should switch between two internal free-space representations: extent trees and bitmaps. Bitmaps become more space-efficient once the number of metadata items required to track free extents exceeds a certain point; these thresholds encode that decision logic.",
+    "created_at": "2025-06-26T05:51:46+00:00"
+  },
+  {
+    "id": 3176072455,
+    "number": 1276,
+    "user": "izxl007",
+    "state": "closed",
+    "title": "fuse: Clarify offset field is signed despite uint64_t type",
+    "body": "Add comment noting that the uint64_t offset in fuse_lseek_in is derived from kernel loff_t and should be treated as signed for negative offsets.",
+    "created_at": "2025-06-25T15:25:05+00:00"
+  },
+  {
+    "id": 3168596795,
+    "number": 1274,
+    "user": "DeanDoyle1502",
+    "state": "closed",
+    "title": "Dean test",
+    "body": null,
+    "created_at": "2025-06-23T15:25:01+00:00"
+  },
+  {
+    "id": 3167207638,
+    "number": 1273,
+    "user": "prassanna-prasath",
+    "state": "closed",
+    "title": "Devel",
+    "body": null,
+    "created_at": "2025-06-23T08:08:05+00:00"
+  },
+  {
+    "id": 3165721375,
+    "number": 1272,
+    "user": "thetr4",
+    "state": "closed",
+    "title": "af_can.c",
+    "body": null,
+    "created_at": "2025-06-22T07:02:38+00:00"
+  }
+]
